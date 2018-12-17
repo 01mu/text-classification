@@ -1,0 +1,499 @@
+to P(to | S) = 0.0199661  P(to | H) = 0.0189971
+a P(a | S) = 0.0117774  P(a | H) = 0.0120377
+your P(your | S) = 0.00610074  P(your | H) = 0.00459866
+or P(or | S) = 0.00606812  P(or | H) = 0.00234851
+call P(call | S) = 0.00600287  P(call | H) = 0.00236081
+you P(you | S) = 0.00587237  P(you | H) = 0.0190955
+the P(the | S) = 0.00580713  P(the | H) = 0.0126894
+2 P(2 | S) = 0.005644  P(2 | H) = 0.00376254
+for P(for | S) = 0.00557876  P(for | H) = 0.00596351
+is P(is | S) = 0.00489364  P(is | H) = 0.00805381
+on P(on | S) = 0.00450215  P(on | H) = 0.00437734
+Call P(Call | S) = 0.00450215  P(Call | H) = 0.00027051
+have P(have | S) = 0.00420853  P(have | H) = 0.00432815
+now P(now | S) = 0.00404541  P(now | H) = 0.00229933
+4 P(4 | S) = 0.00391492  P(4 | H) = 0.00212719
+and P(and | S) = 0.00391492  P(and | H) = 0.00912355
+from P(from | S) = 0.00381704  P(from | H) = 0.00173372
+FREE P(FREE | S) = 0.00365392  P(FREE | H) = 2.45918e-05
+ur P(ur | S) = 0.00352342  P(ur | H) = 0.00234851
+with P(with | S) = 0.0033603  P(with | H) = 0.00307397
+mobile P(mobile | S) = 0.00309931  P(mobile | H) = 0.000159847
+of P(of | S) = 0.00306668  P(of | H) = 0.00620942
+U P(U | S) = 0.00280569  P(U | H) = 0.00317234
+claim P(claim | S) = 0.00257732  P(claim | H) = 1.22959e-05
+You P(You | S) = 0.0025447  P(You | H) = 0.00234851
+are P(are | S) = 0.0025447  P(are | H) = 0.00393468
+our P(our | S) = 0.00251207  P(our | H) = 0.000651682
+To P(To | S) = 0.0024142  P(To | H) = 8.60712e-05
+Your P(Your | S) = 0.00234895  P(Your | H) = 0.00041806
+text P(text | S) = 0.00231633  P(text | H) = 0.000762345
+txt P(txt | S) = 0.00231633  P(txt | H) = 8.60712e-05
+Txt P(Txt | S) = 0.00231633  P(Txt | H) = 6.14794e-05
+in P(in | S) = 0.00225108  P(in | H) = 0.00924651
+prize P(prize | S) = 0.00221845  P(prize | H) = 1.22959e-05
+free P(free | S) = 0.00202271  P(free | H) = 0.000541019
+u P(u | S) = 0.00199008  P(u | H) = 0.00848416
+reply P(reply | S) = 0.00192483  P(reply | H) = 0.00027051
+contact P(contact | S) = 0.00185959  P(contact | H) = 0.000147551
+STOP P(STOP | S) = 0.00185959  P(STOP | H) = 2.45918e-05
+be P(be | S) = 0.00166384  P(be | H) = 0.00393468
+won P(won | S) = 0.00163121  P(won | H) = 1.22959e-05
+week P(week | S) = 0.00159859  P(week | H) = 0.000651682
+just P(just | S) = 0.00159859  P(just | H) = 0.0023854
+who P(who | S) = 0.00159859  P(who | H) = 0.00062709
+Nokia P(Nokia | S) = 0.00153334  P(Nokia | H) = 2.45918e-05
+this P(this | S) = 0.00153334  P(this | H) = 0.00226244
+send P(send | S) = 0.00153334  P(send | H) = 0.00131566
+service P(service | S) = 0.00150072  P(service | H) = 3.68877e-05
+get P(get | S) = 0.00150072  P(get | H) = 0.00351662
+per P(per | S) = 0.00146809  P(per | H) = 0.000147551
+cash P(cash | S) = 0.00143547  P(cash | H) = 0.000122959
+been P(been | S) = 0.00143547  P(been | H) = 0.000983671
+out P(out | S) = 0.00143547  P(out | H) = 0.00226244
+Free P(Free | S) = 0.00140284  P(Free | H) = 6.14794e-05
+new P(new | S) = 0.00140284  P(new | H) = 0.000590203
+Reply P(Reply | S) = 0.00140284  P(Reply | H) = 0.000122959
+URGENT P(URGENT | S) = 0.00137022  P(URGENT | H) = 1.22959e-05
+Text P(Text | S) = 0.0013376  P(Text | H) = 4.91836e-05
+only P(only | S) = 0.0013376  P(only | H) = 0.00132796
+This P(This | S) = 0.0013376  P(This | H) = 0.000504131
+I P(I | S) = 0.00130497  P(I | H) = 0.0178413
+will P(will | S) = 0.00130497  P(will | H) = 0.00365188
+stop P(stop | S) = 0.00130497  P(stop | H) = 0.000331989
+NOW P(NOW | S) = 0.00127235  P(NOW | H) = 7.37753e-05
+No P(No | S) = 0.00127235  P(No | H) = 0.00164765
+customer P(customer | S) = 0.00123972  P(customer | H) = 6.14794e-05
+awarded P(awarded | S) = 0.00123972  P(awarded | H) = 1.22959e-05
+We P(We | S) = 0.0012071  P(We | H) = 0.00103285
+ P( | S) = 0.0012071  P( | H) = 0.00432815
+£1000 P(£1000 | S) = 0.00117447  P(£1000 | H) = 1.22959e-05
+Please P(Please | S) = 0.00114185  P(Please | H) = 0.000393468
+by P(by | S) = 0.00114185  P(by | H) = 0.00154928
+phone P(phone | S) = 0.00110923  P(phone | H) = 0.00083612
+Get P(Get | S) = 0.00110923  P(Get | H) = 0.000122959
+1 P(1 | S) = 0.00110923  P(1 | H) = 0.000577907
+line P(line | S) = 0.00110923  P(line | H) = 9.83671e-05
+draw P(draw | S) = 0.00110923  P(draw | H) = 6.14794e-05
+18 P(18 | S) = 0.00110923  P(18 | H) = 1.22959e-05
+every P(every | S) = 0.0010766  P(every | H) = 0.000405764
+Claim P(Claim | S) = 0.0010766  P(Claim | H) = 1.22959e-05
+shows P(shows | S) = 0.00104398  P(shows | H) = 6.14794e-05
+has P(has | S) = 0.00104398  P(has | H) = 0.00104515
+£2000 P(£2000 | S) = 0.00104398  P(£2000 | H) = 1.22959e-05
+PO P(PO | S) = 0.00104398  P(PO | H) = 1.22959e-05
+Just P(Just | S) = 0.00101135  P(Just | H) = 0.00110663
+16 P(16 | S) = 0.00101135  P(16 | H) = 2.45918e-05
+receive P(receive | S) = 0.00101135  P(receive | H) = 6.14794e-05
+me P(me | S) = 0.000978729  P(me | H) = 0.00774641
+number P(number | S) = 0.000946105  P(number | H) = 0.000590203
+win P(win | S) = 0.000946105  P(win | H) = 0.000147551
+Mobile P(Mobile | S) = 0.000946105  P(Mobile | H) = 3.68877e-05
+at P(at | S) = 0.000880856  P(at | H) = 0.00403305
+TCs P(TCs | S) = 0.000880856  P(TCs | H) = 1.22959e-05
+latest P(latest | S) = 0.000880856  P(latest | H) = 4.91836e-05
+guaranteed P(guaranteed | S) = 0.000880856  P(guaranteed | H) = 1.22959e-05
+collection P(collection | S) = 0.000880856  P(collection | H) = 1.22959e-05
+tone P(tone | S) = 0.000880856  P(tone | H) = 1.22959e-05
+1st P(1st | S) = 0.000880856  P(1st | H) = 0.000135255
+can P(can | S) = 0.000848232  P(can | H) = 0.00355351
+entry P(entry | S) = 0.000848232  P(entry | H) = 1.22959e-05
+selected P(selected | S) = 0.000848232  P(selected | H) = 3.68877e-05
+500 P(500 | S) = 0.000848232  P(500 | H) = 1.22959e-05
+know P(know | S) = 0.000848232  P(know | H) = 0.00260673
+all P(all | S) = 0.000848232  P(all | H) = 0.00243459
+message P(message | S) = 0.000848232  P(message | H) = 0.000368877
+For P(For | S) = 0.000815607  P(For | H) = 0.000221326
+so P(so | S) = 0.000815607  P(so | H) = 0.00347974
+any P(any | S) = 0.000815607  P(any | H) = 0.00109433
+landline P(landline | S) = 0.000815607  P(landline | H) = 3.68877e-05
+it P(it | S) = 0.000782983  P(it | H) = 0.00570529
+Orange P(Orange | S) = 0.000782983  P(Orange | H) = 1.22959e-05
+GUARANTEED P(GUARANTEED | S) = 0.000782983  P(GUARANTEED | H) = 1.22959e-05
+Box P(Box | S) = 0.000782983  P(Box | H) = 1.22959e-05
+mins P(mins | S) = 0.000782983  P(mins | H) = 0.000110663
+award P(award | S) = 0.000782983  P(award | H) = 2.45918e-05
+that P(that | S) = 0.000782983  P(that | H) = 0.00513968
+WON P(WON | S) = 0.000782983  P(WON | H) = 1.22959e-05
+an P(an | S) = 0.000750359  P(an | H) = 0.00108204
+network P(network | S) = 0.000750359  P(network | H) = 6.14794e-05
+attempt P(attempt | S) = 0.000750359  P(attempt | H) = 3.68877e-05
+as P(as | S) = 0.000750359  P(as | H) = 0.00142632
+£150 P(£150 | S) = 0.000750359  P(£150 | H) = 1.22959e-05
+weekly P(weekly | S) = 0.000750359  P(weekly | H) = 1.22959e-05
+£100 P(£100 | S) = 0.000750359  P(£100 | H) = 1.22959e-05
+The P(The | S) = 0.000750359  P(The | H) = 0.000934488
+word P(word | S) = 0.000750359  P(word | H) = 0.000122959
+UR P(UR | S) = 0.000750359  P(UR | H) = 0.000122959
+16 P(16 | S) = 0.000717735  P(16 | H) = 1.22959e-05
+not P(not | S) = 0.000717735  P(not | H) = 0.00414371
+back P(back | S) = 0.000717735  P(back | H) = 0.00127877
+Send P(Send | S) = 0.000717735  P(Send | H) = 0.00020903
+CALL P(CALL | S) = 0.000717735  P(CALL | H) = 9.83671e-05
+YOU P(YOU | S) = 0.000717735  P(YOU | H) = 0.000282805
+Holiday P(Holiday | S) = 0.000717735  P(Holiday | H) = 1.22959e-05
+SAE P(SAE | S) = 0.000717735  P(SAE | H) = 1.22959e-05
+3 P(3 | S) = 0.000717735  P(3 | H) = 0.000516427
+8007 P(8007 | S) = 0.00068511  P(8007 | H) = 1.22959e-05
+TC P(TC | S) = 0.00068511  P(TC | H) = 1.22959e-05
+Valid P(Valid | S) = 0.00068511  P(Valid | H) = 1.22959e-05
+2nd P(2nd | S) = 0.00068511  P(2nd | H) = 0.000135255
+Prize P(Prize | S) = 0.000652486  P(Prize | H) = 1.22959e-05
+no P(no | S) = 0.000652486  P(no | H) = 0.00156158
+£500 P(£500 | S) = 0.000652486  P(£500 | H) = 1.22959e-05
+WIN P(WIN | S) = 0.000652486  P(WIN | H) = 1.22959e-05
+msg P(msg | S) = 0.000652486  P(msg | H) = 0.000553315
+Todays P(Todays | S) = 0.000652486  P(Todays | H) = 1.22959e-05
+camera P(camera | S) = 0.000652486  P(camera | H) = 2.45918e-05
+up P(up | S) = 0.000652486  P(up | H) = 0.00284035
+chance P(chance | S) = 0.000652486  P(chance | H) = 0.000135255
+live P(live | S) = 0.000652486  P(live | H) = 0.000147551
+await P(await | S) = 0.000652486  P(await | H) = 2.45918e-05
+£5000 P(£5000 | S) = 0.000652486  P(£5000 | H) = 1.22959e-05
+SMS P(SMS | S) = 0.000619862  P(SMS | H) = 8.60712e-05
+find P(find | S) = 0.000619862  P(find | H) = 0.000577907
+please P(please | S) = 0.000619862  P(please | H) = 0.000454948
+mob P(mob | S) = 0.000619862  P(mob | H) = 1.22959e-05
+time P(time | S) = 0.000619862  P(time | H) = 0.00188127
+only P(only | S) = 0.000619862  P(only | H) = 0.000122959
+more P(more | S) = 0.000619862  P(more | H) = 0.0008976
+ringtone P(ringtone | S) = 0.000619862  P(ringtone | H) = 1.22959e-05
+chat P(chat | S) = 0.000619862  P(chat | H) = 0.000122959
+land P(land | S) = 0.000619862  P(land | H) = 1.22959e-05
+86688 P(86688 | S) = 0.000619862  P(86688 | H) = 1.22959e-05
+A P(A | S) = 0.000619862  P(A | H) = 0.00105745
+12hrs P(12hrs | S) = 0.000587237  P(12hrs | H) = 1.22959e-05
+TsCs P(TsCs | S) = 0.000587237  P(TsCs | H) = 1.22959e-05
+tried P(tried | S) = 0.000587237  P(tried | H) = 7.37753e-05
+750 P(750 | S) = 0.000587237  P(750 | H) = 1.22959e-05
+apply P(apply | S) = 0.000587237  P(apply | H) = 3.68877e-05
+150ppm P(150ppm | S) = 0.000587237  P(150ppm | H) = 1.22959e-05
+video P(video | S) = 0.000587237  P(video | H) = 3.68877e-05
+collect P(collect | S) = 0.000587237  P(collect | H) = 6.14794e-05
+vouchers P(vouchers | S) = 0.000587237  P(vouchers | H) = 1.22959e-05
+Urgent P(Urgent | S) = 0.000587237  P(Urgent | H) = 1.22959e-05
+pounds P(pounds | S) = 0.000587237  P(pounds | H) = 3.68877e-05
+if P(if | S) = 0.000587237  P(if | H) = 0.00274198
+Code P(Code | S) = 0.000587237  P(Code | H) = 1.22959e-05
+£250 P(£250 | S) = 0.000554613  P(£250 | H) = 1.22959e-05
+go P(go | S) = 0.000554613  P(go | H) = 0.00281576
+Identifier P(Identifier | S) = 0.000554613  P(Identifier | H) = 1.22959e-05
+want P(want | S) = 0.000554613  P(want | H) = 0.0017829
+texts P(texts | S) = 0.000554613  P(texts | H) = 0.000110663
+tones P(tones | S) = 0.000554613  P(tones | H) = 1.22959e-05
+PRIVATE P(PRIVATE | S) = 0.000554613  P(PRIVATE | H) = 1.22959e-05
+Bonus P(Bonus | S) = 0.000554613  P(Bonus | H) = 1.22959e-05
+Statement P(Statement | S) = 0.000554613  P(Statement | H) = 1.22959e-05
+unredeemed P(unredeemed | S) = 0.000554613  P(unredeemed | H) = 1.22959e-05
+Account P(Account | S) = 0.000554613  P(Account | H) = 1.22959e-05
+Dear P(Dear | S) = 0.000554613  P(Dear | H) = 0.000430356
+Ltd P(Ltd | S) = 0.000521989  P(Ltd | H) = 1.22959e-05
+Had P(Had | S) = 0.000521989  P(Had | H) = 7.37753e-05
+Expires P(Expires | S) = 0.000521989  P(Expires | H) = 1.22959e-05
+Ur P(Ur | S) = 0.000521989  P(Ur | H) = 0.000590203
+colour P(colour | S) = 0.000521989  P(colour | H) = 6.14794e-05
+150ppm P(150ppm | S) = 0.000521989  P(150ppm | H) = 1.22959e-05
+Cost P(Cost | S) = 0.000521989  P(Cost | H) = 1.22959e-05
+YES P(YES | S) = 0.000521989  P(YES | H) = 1.22959e-05
+operator P(operator | S) = 0.000521989  P(operator | H) = 1.22959e-05
+100 P(100 | S) = 0.000521989  P(100 | H) = 2.45918e-05
+C P(C | S) = 0.000521989  P(C | H) = 0.000221326
+waiting P(waiting | S) = 0.000521989  P(waiting | H) = 0.000381173
+dating P(dating | S) = 0.000521989  P(dating | H) = 1.22959e-05
+New P(New | S) = 0.000521989  P(New | H) = 0.000184438
+trying P(trying | S) = 0.000521989  P(trying | H) = 0.000344285
+unsubscribe P(unsubscribe | S) = 0.000521989  P(unsubscribe | H) = 1.22959e-05
+dont P(dont | S) = 0.000521989  P(dont | H) = 0.00263132
+08000839402 P(08000839402 | S) = 0.000521989  P(08000839402 | H) = 1.22959e-05
+NOKIA P(NOKIA | S) = 0.000521989  P(NOKIA | H) = 1.22959e-05
+MobileUpd8 P(MobileUpd8 | S) = 0.000521989  P(MobileUpd8 | H) = 1.22959e-05
+Only P(Only | S) = 0.000489364  P(Only | H) = 0.000172142
+gift P(gift | S) = 0.000489364  P(gift | H) = 8.60712e-05
+they P(they | S) = 0.000489364  P(they | H) = 0.000983671
+Hi P(Hi | S) = 0.000489364  P(Hi | H) = 0.000885304
+min P(min | S) = 0.000489364  P(min | H) = 8.60712e-05
+CHAT P(CHAT | S) = 0.000489364  P(CHAT | H) = 2.45918e-05
+what P(what | S) = 0.000489364  P(what | H) = 0.00161076
+UK P(UK | S) = 0.000489364  P(UK | H) = 1.22959e-05
+Congratulations P(Congratulations | S) = 0.000489364  P(Congratulations | H) = 2.45918e-05
+rate P(rate | S) = 0.000489364  P(rate | H) = 2.45918e-05
+CASH P(CASH | S) = 0.000489364  P(CASH | H) = 1.22959e-05
+If P(If | S) = 0.000489364  P(If | H) = 0.00147551
+SavaMob P(SavaMob | S) = 0.00045674  P(SavaMob | H) = 1.22959e-05
+Now P(Now | S) = 0.00045674  P(Now | H) = 0.000331989
+easy P(easy | S) = 0.00045674  P(easy | H) = 0.000172142
+T P(T | S) = 0.00045674  P(T | H) = 2.45918e-05
+150p P(150p | S) = 0.00045674  P(150p | H) = 1.22959e-05
+yours P(yours | S) = 0.00045674  P(yours | H) = 6.14794e-05
+tell P(tell | S) = 0.00045674  P(tell | H) = 0.00115581
+Double P(Double | S) = 0.00045674  P(Double | H) = 3.68877e-05
+Do P(Do | S) = 0.00045674  P(Do | H) = 0.00124188
+points P(points | S) = 0.00045674  P(points | H) = 4.91836e-05
+Win P(Win | S) = 0.00045674  P(Win | H) = 1.22959e-05
+£350 P(£350 | S) = 0.00045674  P(£350 | H) = 1.22959e-05
+TONE P(TONE | S) = 0.00045674  P(TONE | H) = 1.22959e-05
+take P(take | S) = 0.00045674  P(take | H) = 0.00110663
+800 P(800 | S) = 0.00045674  P(800 | H) = 1.22959e-05
+weeks P(weeks | S) = 0.00045674  P(weeks | H) = 8.60712e-05
+wk P(wk | S) = 0.00045674  P(wk | H) = 4.91836e-05
+Thanks P(Thanks | S) = 0.00045674  P(Thanks | H) = 0.000344285
+2003 P(2003 | S) = 0.00045674  P(2003 | H) = 1.22959e-05
+0800 P(0800 | S) = 0.00045674  P(0800 | H) = 1.22959e-05
+mates P(mates | S) = 0.00045674  P(mates | H) = 3.68877e-05
+next P(next | S) = 0.00045674  P(next | H) = 0.000528723
+sexy P(sexy | S) = 0.00045674  P(sexy | H) = 0.000122959
+like P(like | S) = 0.00045674  P(like | H) = 0.00260673
+top P(top | S) = 0.000424116  P(top | H) = 8.60712e-05
+87066 P(87066 | S) = 0.000424116  P(87066 | H) = 1.22959e-05
+today P(today | S) = 0.000424116  P(today | H) = 0.00083612
+150 P(150 | S) = 0.000424116  P(150 | H) = 1.22959e-05
+anytime P(anytime | S) = 0.000424116  P(anytime | H) = 1.22959e-05
+phones P(phones | S) = 0.000424116  P(phones | H) = 3.68877e-05
+Offer P(Offer | S) = 0.000424116  P(Offer | H) = 1.22959e-05
+we P(we | S) = 0.000424116  P(we | H) = 0.00259443
+Want P(Want | S) = 0.000424116  P(Want | H) = 8.60712e-05
+eg P(eg | S) = 0.000424116  P(eg | H) = 1.22959e-05
+services P(services | S) = 0.000424116  P(services | H) = 2.45918e-05
+Cs P(Cs | S) = 0.000424116  P(Cs | H) = 1.22959e-05
+offers P(offers | S) = 0.000424116  P(offers | H) = 2.45918e-05
+Update P(Update | S) = 0.000424116  P(Update | H) = 2.45918e-05
+code P(code | S) = 0.000424116  P(code | H) = 2.45918e-05
+her P(her | S) = 0.000424116  P(her | H) = 0.00126648
+As P(As | S) = 0.000424116  P(As | H) = 0.000344285
+complimentary P(complimentary | S) = 0.000424116  P(complimentary | H) = 1.22959e-05
+delivery P(delivery | S) = 0.000424116  P(delivery | H) = 2.45918e-05
+NEW P(NEW | S) = 0.000424116  P(NEW | H) = 8.60712e-05
+Im P(Im | S) = 0.000424116  P(Im | H) = 0.00377484
+worth P(worth | S) = 0.000424116  P(worth | H) = 4.91836e-05
+r P(r | S) = 0.000391492  P(r | H) = 0.00125418
+final P(final | S) = 0.000391492  P(final | H) = 3.68877e-05
+play P(play | S) = 0.000391492  P(play | H) = 0.000233622
+make P(make | S) = 0.000391492  P(make | H) = 0.000983671
+price P(price | S) = 0.000391492  P(price | H) = 8.60712e-05
+offer P(offer | S) = 0.000391492  P(offer | H) = 7.37753e-05
+valued P(valued | S) = 0.000391492  P(valued | H) = 1.22959e-05
+order P(order | S) = 0.000391492  P(order | H) = 8.60712e-05
+friend P(friend | S) = 0.000391492  P(friend | H) = 0.000381173
+Motorola P(Motorola | S) = 0.000391492  P(Motorola | H) = 1.22959e-05
+yr P(yr | S) = 0.000391492  P(yr | H) = 3.68877e-05
+winner P(winner | S) = 0.000391492  P(winner | H) = 1.22959e-05
+08000930705 P(08000930705 | S) = 0.000391492  P(08000930705 | H) = 1.22959e-05
+holiday P(holiday | S) = 0.000391492  P(holiday | H) = 0.000122959
+GO P(GO | S) = 0.000391492  P(GO | H) = 0.000110663
+games P(games | S) = 0.000391492  P(games | H) = 2.45918e-05
+Chat P(Chat | S) = 0.000358867  P(Chat | H) = 1.22959e-05
+wkly P(wkly | S) = 0.000358867  P(wkly | H) = 1.22959e-05
+comp P(comp | S) = 0.000358867  P(comp | H) = 1.22959e-05
+charged P(charged | S) = 0.000358867  P(charged | H) = 1.22959e-05
+do P(do | S) = 0.000358867  P(do | H) = 0.00316004
+Video P(Video | S) = 0.000358867  P(Video | H) = 1.22959e-05
+representative P(representative | S) = 0.000358867  P(representative | H) = 1.22959e-05
+HMV P(HMV | S) = 0.000358867  P(HMV | H) = 1.22959e-05
+opt P(opt | S) = 0.000358867  P(opt | H) = 1.22959e-05
+apply P(apply | S) = 0.000358867  P(apply | H) = 1.22959e-05
+either P(either | S) = 0.000358867  P(either | H) = 0.000122959
+between P(between | S) = 0.000358867  P(between | H) = 0.00027051
+18 P(18 | S) = 0.000358867  P(18 | H) = 1.22959e-05
+currently P(currently | S) = 0.000358867  P(currently | H) = 4.91836e-05
+MUSIC P(MUSIC | S) = 0.000358867  P(MUSIC | H) = 1.22959e-05
+thinks P(thinks | S) = 0.000358867  P(thinks | H) = 4.91836e-05
+Latest P(Latest | S) = 0.000358867  P(Latest | H) = 1.22959e-05
+Camera P(Camera | S) = 0.000358867  P(Camera | H) = 2.45918e-05
+sent P(sent | S) = 0.000358867  P(sent | H) = 0.000651682
+POBox P(POBox | S) = 0.000358867  P(POBox | H) = 1.22959e-05
+Caller P(Caller | S) = 0.000358867  P(Caller | H) = 1.22959e-05
+pics P(pics | S) = 0.000358867  P(pics | H) = 7.37753e-05
+See P(See | S) = 0.000358867  P(See | H) = 0.000245918
+12 P(12 | S) = 0.000358867  P(12 | H) = 6.14794e-05
+Congrats P(Congrats | S) = 0.000358867  P(Congrats | H) = 9.83671e-05
+voucher P(voucher | S) = 0.000358867  P(voucher | H) = 2.45918e-05
+R P(R | S) = 0.000358867  P(R | H) = 0.000381173
+TXT P(TXT | S) = 0.000358867  P(TXT | H) = 3.68877e-05
+content P(content | S) = 0.000358867  P(content | H) = 2.45918e-05
+part P(part | S) = 0.000358867  P(part | H) = 0.000221326
+there P(there | S) = 0.000358867  P(there | H) = 0.00167224
+NTT P(NTT | S) = 0.000358867  P(NTT | H) = 1.22959e-05
+player P(player | S) = 0.000358867  P(player | H) = 2.45918e-05
+Quiz P(Quiz | S) = 0.000358867  P(Quiz | H) = 1.22959e-05
+M P(M | S) = 0.000358867  P(M | H) = 1.22959e-05
+Customer P(Customer | S) = 0.000358867  P(Customer | H) = 7.37753e-05
+am P(am | S) = 0.000358867  P(am | H) = 0.00221326
+LIVE P(LIVE | S) = 0.000358867  P(LIVE | H) = 1.22959e-05
+£200 P(£200 | S) = 0.000326243  P(£200 | H) = 1.22959e-05
+More P(More | S) = 0.000326243  P(More | H) = 3.68877e-05
+BOX P(BOX | S) = 0.000326243  P(BOX | H) = 1.22959e-05
+fun P(fun | S) = 0.000326243  P(fun | H) = 0.000196734
+5 P(5 | S) = 0.000326243  P(5 | H) = 0.000405764
+rates P(rates | S) = 0.000326243  P(rates | H) = 2.45918e-05
+charge P(charge | S) = 0.000326243  P(charge | H) = 0.000122959
+Tone P(Tone | S) = 0.000326243  P(Tone | H) = 1.22959e-05
+11mths P(11mths | S) = 0.000326243  P(11mths | H) = 1.22959e-05
+re P(re | S) = 0.000326243  P(re | H) = 0.000122959
+150pmsg P(150pmsg | S) = 0.000326243  P(150pmsg | H) = 1.22959e-05
+when P(when | S) = 0.000326243  P(when | H) = 0.00280346
+looking P(looking | S) = 0.000326243  P(looking | H) = 0.000245918
+numbers P(numbers | S) = 0.000326243  P(numbers | H) = 6.14794e-05
+Club P(Club | S) = 0.000326243  P(Club | H) = 1.22959e-05
+FreeMsg P(FreeMsg | S) = 0.000326243  P(FreeMsg | H) = 1.22959e-05
+real P(real | S) = 0.000326243  P(real | H) = 0.000258214
+credits P(credits | S) = 0.000326243  P(credits | H) = 1.22959e-05
+best P(best | S) = 0.000326243  P(best | H) = 0.000368877
+mobiles P(mobiles | S) = 0.000326243  P(mobiles | H) = 1.22959e-05
+was P(was | S) = 0.000326243  P(was | H) = 0.00236081
+150p P(150p | S) = 0.000326243  P(150p | H) = 1.22959e-05
+S P(S | S) = 0.000326243  P(S | H) = 7.37753e-05
+join P(join | S) = 0.000326243  P(join | H) = 0.000135255
+Xmas P(Xmas | S) = 0.000326243  P(Xmas | H) = 9.83671e-05
+Dogging P(Dogging | S) = 0.000326243  P(Dogging | H) = 1.22959e-05
+rental P(rental | S) = 0.000326243  P(rental | H) = 1.22959e-05
+10p P(10p | S) = 0.000326243  P(10p | H) = 1.22959e-05
+Last P(Last | S) = 0.000326243  P(Last | H) = 9.83671e-05
+discount P(discount | S) = 0.000326243  P(discount | H) = 2.45918e-05
+specially P(specially | S) = 0.000326243  P(specially | H) = 1.22959e-05
+help P(help | S) = 0.000326243  P(help | H) = 0.000393468
+wwwgetzedcouk P(wwwgetzedcouk | S) = 0.000326243  P(wwwgetzedcouk | H) = 1.22959e-05
+Phone P(Phone | S) = 0.000326243  P(Phone | H) = 2.45918e-05
+Mins P(Mins | S) = 0.000326243  P(Mins | H) = 1.22959e-05
+Bluetooth P(Bluetooth | S) = 0.000326243  P(Bluetooth | H) = 1.22959e-05
+txting P(txting | S) = 0.000326243  P(txting | H) = 2.45918e-05
+see P(see | S) = 0.000326243  P(see | H) = 0.00140173
+my P(my | S) = 0.000326243  P(my | H) = 0.00766034
+FOR P(FOR | S) = 0.000326243  P(FOR | H) = 6.14794e-05
+std P(std | S) = 0.000326243  P(std | H) = 1.22959e-05
+UKs P(UKs | S) = 0.000293619  P(UKs | H) = 1.22959e-05
+n P(n | S) = 0.000293619  P(n | H) = 0.00162306
+then P(then | S) = 0.000293619  P(then | H) = 0.00173372
+Stop P(Stop | S) = 0.000293619  P(Stop | H) = 7.37753e-05
+which P(which | S) = 0.000293619  P(which | H) = 0.000491836
+now P(now | S) = 0.000293619  P(now | H) = 0.000873008
+auction P(auction | S) = 0.000293619  P(auction | H) = 1.22959e-05
+hot P(hot | S) = 0.000293619  P(hot | H) = 9.83671e-05
+club P(club | S) = 0.000293619  P(club | H) = 2.45918e-05
+Camcorder P(Camcorder | S) = 0.000293619  P(Camcorder | H) = 1.22959e-05
+FREEPHONE P(FREEPHONE | S) = 0.000293619  P(FREEPHONE | H) = 1.22959e-05
+TEXT P(TEXT | S) = 0.000293619  P(TEXT | H) = 3.68877e-05
+cost P(cost | S) = 0.000293619  P(cost | H) = 0.000110663
+secret P(secret | S) = 0.000293619  P(secret | H) = 7.37753e-05
+admirer P(admirer | S) = 0.000293619  P(admirer | H) = 1.22959e-05
+Ufind P(Ufind | S) = 0.000293619  P(Ufind | H) = 1.22959e-05
+Del P(Del | S) = 0.000293619  P(Del | H) = 1.22959e-05
+Rreveal P(Rreveal | S) = 0.000293619  P(Rreveal | H) = 1.22959e-05
+CD P(CD | S) = 0.000293619  P(CD | H) = 1.22959e-05
+specialcall P(specialcall | S) = 0.000293619  P(specialcall | H) = 1.22959e-05
+Good P(Good | S) = 0.000293619  P(Good | H) = 0.000860712
+ending P(ending | S) = 0.000293619  P(ending | H) = 2.45918e-05
+name P(name | S) = 0.000293619  P(name | H) = 0.000368877
+IS P(IS | S) = 0.000293619  P(IS | H) = 0.00027051
+reward P(reward | S) = 0.000293619  P(reward | H) = 1.22959e-05
+entitled P(entitled | S) = 0.000293619  P(entitled | H) = 1.22959e-05
+3030 P(3030 | S) = 0.000293619  P(3030 | H) = 1.22959e-05
+25p P(25p | S) = 0.000293619  P(25p | H) = 1.22959e-05
+No1 P(No1 | S) = 0.000293619  P(No1 | H) = 1.22959e-05
+Tones P(Tones | S) = 0.000293619  P(Tones | H) = 1.22959e-05
+From P(From | S) = 0.000293619  P(From | H) = 8.60712e-05
+2004 P(2004 | S) = 0.000293619  P(2004 | H) = 1.22959e-05
+messages P(messages | S) = 0.000293619  P(messages | H) = 0.000110663
+iPod P(iPod | S) = 0.000293619  P(iPod | H) = 1.22959e-05
+£800 P(£800 | S) = 0.000293619  P(£800 | H) = 1.22959e-05
+direct P(direct | S) = 0.000293619  P(direct | H) = 3.68877e-05
+details P(details | S) = 0.000293619  P(details | H) = 0.000159847
+poly P(poly | S) = 0.000293619  P(poly | H) = 1.22959e-05
+txts P(txts | S) = 0.000293619  P(txts | H) = 1.22959e-05
+Half P(Half | S) = 0.000260994  P(Half | H) = 1.22959e-05
+custcare P(custcare | S) = 0.000260994  P(custcare | H) = 1.22959e-05
+10pmin P(10pmin | S) = 0.000260994  P(10pmin | H) = 1.22959e-05
+Sony P(Sony | S) = 0.000260994  P(Sony | H) = 2.45918e-05
+Welcome P(Welcome | S) = 0.000260994  P(Welcome | H) = 1.22959e-05
+days P(days | S) = 0.000260994  P(days | H) = 0.00027051
+pls P(pls | S) = 0.000260994  P(pls | H) = 0.000368877
+someone P(someone | S) = 0.000260994  P(someone | H) = 0.000516427
+matches P(matches | S) = 0.000260994  P(matches | H) = 1.22959e-05
+enter P(enter | S) = 0.000260994  P(enter | H) = 4.91836e-05
+important P(important | S) = 0.000260994  P(important | H) = 0.000147551
+Sunshine P(Sunshine | S) = 0.000260994  P(Sunshine | H) = 1.22959e-05
+area P(area | S) = 0.000260994  P(area | H) = 6.14794e-05
+visit P(visit | S) = 0.000260994  P(visit | H) = 0.000110663
+Join P(Join | S) = 0.000260994  P(Join | H) = 1.22959e-05
+inc P(inc | S) = 0.000260994  P(inc | H) = 1.22959e-05
+could P(could | S) = 0.000260994  P(could | H) = 0.000614794
+5WB P(5WB | S) = 0.000260994  P(5WB | H) = 1.22959e-05
+CR9 P(CR9 | S) = 0.000260994  P(CR9 | H) = 1.22959e-05
+Tenerife P(Tenerife | S) = 0.000260994  P(Tenerife | H) = 1.22959e-05
+Croydon P(Croydon | S) = 0.000260994  P(Croydon | H) = 1.22959e-05
+1327 P(1327 | S) = 0.000260994  P(1327 | H) = 1.22959e-05
+20p P(20p | S) = 0.000260994  P(20p | H) = 1.22959e-05
+ONLY P(ONLY | S) = 0.000260994  P(ONLY | H) = 4.91836e-05
+about P(about | S) = 0.000260994  P(about | H) = 0.00181979
+£300 P(£300 | S) = 0.000260994  P(£300 | H) = 1.22959e-05
+each P(each | S) = 0.000260994  P(each | H) = 8.60712e-05
+within P(within | S) = 0.000260994  P(within | H) = 8.60712e-05
+DVD P(DVD | S) = 0.000260994  P(DVD | H) = 1.22959e-05
+62468 P(62468 | S) = 0.000260994  P(62468 | H) = 1.22959e-05
+£900 P(£900 | S) = 0.000260994  P(£900 | H) = 1.22959e-05
+spree P(spree | S) = 0.000260994  P(spree | H) = 1.22959e-05
+Someone P(Someone | S) = 0.000260994  P(Someone | H) = 3.68877e-05
+but P(but | S) = 0.000260994  P(but | H) = 0.00347974
+85023 P(85023 | S) = 0.000260994  P(85023 | H) = 1.22959e-05
+Sol P(Sol | S) = 0.000260994  P(Sol | H) = 1.22959e-05
+its P(its | S) = 0.000260994  P(its | H) = 0.00220096
+Day P(Day | S) = 0.000260994  P(Day | H) = 9.83671e-05
+STOP P(STOP | S) = 0.000260994  P(STOP | H) = 1.22959e-05
+minute P(minute | S) = 0.000260994  P(minute | H) = 0.000110663
+horny P(horny | S) = 0.000260994  P(horny | H) = 1.22959e-05
+Landline P(Landline | S) = 0.000260994  P(Landline | H) = 1.22959e-05
+BTnationalrate P(BTnationalrate | S) = 0.000260994  P(BTnationalrate | H) = 1.22959e-05
+cashbalance P(cashbalance | S) = 0.000260994  P(cashbalance | H) = 1.22959e-05
+miss P(miss | S) = 0.000260994  P(miss | H) = 0.000713162
+news P(news | S) = 0.000260994  P(news | H) = 9.83671e-05
+Uve P(Uve | S) = 0.000260994  P(Uve | H) = 1.22959e-05
+day P(day | S) = 0.000260994  P(day | H) = 0.00167224
+need P(need | S) = 0.000260994  P(need | H) = 0.00177061
+national P(national | S) = 0.000260994  P(national | H) = 1.22959e-05
+87077 P(87077 | S) = 0.000260994  P(87077 | H) = 1.22959e-05
+update P(update | S) = 0.000260994  P(update | H) = 6.14794e-05
+calls P(calls | S) = 0.000260994  P(calls | H) = 0.000110663
+Our P(Our | S) = 0.000260994  P(Our | H) = 0.000147551
+answer P(answer | S) = 0.000260994  P(answer | H) = 0.000122959
+weekends P(weekends | S) = 0.000260994  P(weekends | H) = 3.68877e-05
+AGE P(AGE | S) = 0.000260994  P(AGE | H) = 1.22959e-05
+music P(music | S) = 0.000260994  P(music | H) = 4.91836e-05
+tomorrow P(tomorrow | S) = 0.000260994  P(tomorrow | H) = 0.000344285
+HGSuite3422Lands P(HGSuite3422Lands | S) = 0.000260994  P(HGSuite3422Lands | H) = 1.22959e-05
+credit P(credit | S) = 0.000260994  P(credit | H) = 4.91836e-05
+36504 P(36504 | S) = 0.000260994  P(36504 | H) = 1.22959e-05
+still P(still | S) = 0.000260994  P(still | H) = 0.00162306
+camcorder P(camcorder | S) = 0.000260994  P(camcorder | H) = 1.22959e-05
+LDN P(LDN | S) = 0.000260994  P(LDN | H) = 1.22959e-05
+maximize P(maximize | S) = 0.000260994  P(maximize | H) = 1.22959e-05
+cashin P(cashin | S) = 0.000260994  P(cashin | H) = 1.22959e-05
+Costa P(Costa | S) = 0.000260994  P(Costa | H) = 1.22959e-05
+bid P(bid | S) = 0.000260994  P(bid | H) = 1.22959e-05
+flights P(flights | S) = 0.00022837  P(flights | H) = 1.22959e-05
+sms P(sms | S) = 0.00022837  P(sms | H) = 0.000147551
+lucky P(lucky | S) = 0.00022837  P(lucky | H) = 8.60712e-05
+replying P(replying | S) = 0.00022837  P(replying | H) = 3.68877e-05
+even P(even | S) = 0.00022837  P(even | H) = 0.000516427
+special P(special | S) = 0.00022837  P(special | H) = 0.000405764
+weekend P(weekend | S) = 0.00022837  P(weekend | H) = 0.000147551
+year P(year | S) = 0.00022837  P(year | H) = 0.000381173
+love P(love | S) = 0.00022837  P(love | H) = 0.00163535
+B P(B | S) = 0.00022837  P(B | H) = 9.83671e-05
+give P(give | S) = 0.00022837  P(give | H) = 0.00105745
+prize P(prize | S) = 0.00022837  P(prize | H) = 1.22959e-05
+etc P(etc | S) = 0.00022837  P(etc | H) = 6.14794e-05
+entered P(entered | S) = 0.00022837  P(entered | H) = 7.37753e-05
+being P(being | S) = 0.00022837  P(being | H) = 0.000467244
+Dont P(Dont | S) = 0.00022837  P(Dont | H) = 0.000725457
+standard P(standard | S) = 0.00022837  P(standard | H) = 1.22959e-05
+08712300220 P(08712300220 | S) = 0.00022837  P(08712300220 | H) = 1.22959e-05
+you P(you | S) = 0.00022837  P(you | H) = 0.000946783
+40GB P(40GB | S) = 0.00022837  P(40GB | H) = 1.22959e-05
+6 P(6 | S) = 0.00022837  P(6 | H) = 0.000282805
+Max10mins P(Max10mins | S) = 0.00022837  P(Max10mins | H) = 1.22959e-05
+Optout P(Optout | S) = 0.00022837  P(Optout | H) = 1.22959e-05
+10 P(10 | S) = 0.00022837  P(10 | H) = 0.000122959
+HL P(HL | S) = 0.00022837  P(HL | H) = 1.22959e-05
+Cost£150pm P(Cost£150pm | S) = 0.00022837  P(Cost£150pm | H) = 1.22959e-05
+SK38xh P(SK38xh | S) = 0.00022837  P(SK38xh | H) = 1.22959e-05
+Stockport P(Stockport | S) = 0.00022837  P(Stockport | H) = 1.22959e-05
+SiPix P(SiPix | S) = 0.00022837  P(SiPix | H) = 1.22959e-05

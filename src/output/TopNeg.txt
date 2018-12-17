@@ -1,0 +1,499 @@
+you P(you | H) = 0.0190955  P(you | S) = 0.00587237
+to P(to | H) = 0.0189971  P(to | S) = 0.0199661
+I P(I | H) = 0.0178413  P(I | S) = 0.00130497
+the P(the | H) = 0.0126894  P(the | S) = 0.00580713
+a P(a | H) = 0.0120377  P(a | S) = 0.0117774
+in P(in | H) = 0.00924651  P(in | S) = 0.00225108
+i P(i | H) = 0.00913584  P(i | S) = 0.00022837
+and P(and | H) = 0.00912355  P(and | S) = 0.00391492
+u P(u | H) = 0.00848416  P(u | S) = 0.00199008
+is P(is | H) = 0.00805381  P(is | S) = 0.00489364
+me P(me | H) = 0.00774641  P(me | S) = 0.000978729
+my P(my | H) = 0.00766034  P(my | S) = 0.000326243
+of P(of | H) = 0.00620942  P(of | S) = 0.00306668
+for P(for | H) = 0.00596351  P(for | S) = 0.00557876
+it P(it | H) = 0.00570529  P(it | S) = 0.000782983
+that P(that | H) = 0.00513968  P(that | S) = 0.000782983
+your P(your | H) = 0.00459866  P(your | S) = 0.00610074
+on P(on | H) = 0.00437734  P(on | S) = 0.00450215
+have P(have | H) = 0.00432815  P(have | S) = 0.00420853
+ P( | H) = 0.00432815  P( | S) = 0.0012071
+not P(not | H) = 0.00414371  P(not | S) = 0.000717735
+at P(at | H) = 0.00403305  P(at | S) = 0.000880856
+are P(are | H) = 0.00393468  P(are | S) = 0.0025447
+be P(be | H) = 0.00393468  P(be | S) = 0.00166384
+Im P(Im | H) = 0.00377484  P(Im | S) = 0.000424116
+2 P(2 | H) = 0.00376254  P(2 | S) = 0.005644
+will P(will | H) = 0.00365188  P(will | S) = 0.00130497
+can P(can | H) = 0.00355351  P(can | S) = 0.000848232
+get P(get | H) = 0.00351662  P(get | S) = 0.00150072
+but P(but | H) = 0.00347974  P(but | S) = 0.000260994
+so P(so | H) = 0.00347974  P(so | S) = 0.000815607
+ltgt P(ltgt | H) = 0.00325841  P(ltgt | S) = 3.26243e-05
+U P(U | H) = 0.00317234  P(U | S) = 0.00280569
+do P(do | H) = 0.00316004  P(do | S) = 0.000358867
+with P(with | H) = 0.00307397  P(with | S) = 0.0033603
+up P(up | H) = 0.00284035  P(up | S) = 0.000652486
+go P(go | H) = 0.00281576  P(go | S) = 0.000554613
+when P(when | H) = 0.00280346  P(when | S) = 0.000326243
+if P(if | H) = 0.00274198  P(if | S) = 0.000587237
+dont P(dont | H) = 0.00263132  P(dont | S) = 0.000521989
+know P(know | H) = 0.00260673  P(know | S) = 0.000848232
+like P(like | H) = 0.00260673  P(like | S) = 0.00045674
+we P(we | H) = 0.00259443  P(we | S) = 0.000424116
+got P(got | H) = 0.00245918  P(got | S) = 0.000163121
+all P(all | H) = 0.00243459  P(all | S) = 0.000848232
+come P(come | H) = 0.00242229  P(come | S) = 6.52486e-05
+just P(just | H) = 0.0023854  P(just | S) = 0.00159859
+was P(was | H) = 0.00236081  P(was | S) = 0.000326243
+call P(call | H) = 0.00236081  P(call | S) = 0.00600287
+ur P(ur | H) = 0.00234851  P(ur | S) = 0.00352342
+or P(or | H) = 0.00234851  P(or | S) = 0.00606812
+You P(You | H) = 0.00234851  P(You | S) = 0.0025447
+now P(now | H) = 0.00229933  P(now | S) = 0.00404541
+this P(this | H) = 0.00226244  P(this | S) = 0.00153334
+out P(out | H) = 0.00226244  P(out | S) = 0.00143547
+am P(am | H) = 0.00221326  P(am | S) = 0.000358867
+its P(its | H) = 0.00220096  P(its | S) = 0.000260994
+4 P(4 | H) = 0.00212719  P(4 | S) = 0.00391492
+Ill P(Ill | H) = 0.0020903  P(Ill | S) = 3.26243e-05
+time P(time | H) = 0.00188127  P(time | S) = 0.000619862
+about P(about | H) = 0.00181979  P(about | S) = 0.000260994
+going P(going | H) = 0.0017829  P(going | S) = 6.52486e-05
+want P(want | H) = 0.0017829  P(want | S) = 0.000554613
+need P(need | H) = 0.00177061  P(need | S) = 0.000260994
+from P(from | H) = 0.00173372  P(from | S) = 0.00381704
+then P(then | H) = 0.00173372  P(then | S) = 0.000293619
+one P(one | H) = 0.00170913  P(one | S) = 0.000195746
+How P(How | H) = 0.00170913  P(How | S) = 0.000195746
+good P(good | H) = 0.00168454  P(good | S) = 0.000163121
+But P(But | H) = 0.00168454  P(But | S) = 3.26243e-05
+day P(day | H) = 0.00167224  P(day | S) = 0.000260994
+there P(there | H) = 0.00167224  P(there | S) = 0.000358867
+No P(No | H) = 0.00164765  P(No | S) = 0.00127235
+love P(love | H) = 0.00163535  P(love | S) = 0.00022837
+im P(im | H) = 0.00163535  P(im | S) = 6.52486e-05
+he P(he | H) = 0.00162306  P(he | S) = 3.26243e-05
+n P(n | H) = 0.00162306  P(n | S) = 0.000293619
+still P(still | H) = 0.00162306  P(still | S) = 0.000260994
+what P(what | H) = 0.00161076  P(what | S) = 0.000489364
+home P(home | H) = 0.00159847  P(home | S) = 6.52486e-05
+no P(no | H) = 0.00156158  P(no | S) = 0.000652486
+Ok P(Ok | H) = 0.00154928  P(Ok | S) = 3.26243e-05
+by P(by | H) = 0.00154928  P(by | S) = 0.00114185
+If P(If | H) = 0.00147551  P(If | S) = 0.000489364
+So P(So | H) = 0.00145091  P(So | S) = 9.78729e-05
+Its P(Its | H) = 0.00143862  P(Its | S) = 0.000195746
+as P(as | H) = 0.00142632  P(as | S) = 0.000750359
+think P(think | H) = 0.00141403  P(think | S) = 6.52486e-05
+see P(see | H) = 0.00140173  P(see | S) = 0.000326243
+how P(how | H) = 0.00135255  P(how | S) = 0.000130497
+lor P(lor | H) = 0.00135255  P(lor | S) = 3.26243e-05
+cant P(cant | H) = 0.00135255  P(cant | S) = 3.26243e-05
+some P(some | H) = 0.00134025  P(some | S) = 0.00022837
+only P(only | H) = 0.00132796  P(only | S) = 0.0013376
+ü P(ü | H) = 0.00132796  P(ü | S) = 3.26243e-05
+send P(send | H) = 0.00131566  P(send | S) = 0.00153334
+Sorry P(Sorry | H) = 0.00131566  P(Sorry | S) = 0.000130497
+back P(back | H) = 0.00127877  P(back | S) = 0.000717735
+her P(her | H) = 0.00126648  P(her | S) = 0.000424116
+What P(What | H) = 0.00125418  P(What | S) = 0.000163121
+My P(My | H) = 0.00125418  P(My | S) = 6.52486e-05
+r P(r | H) = 0.00125418  P(r | S) = 0.000391492
+Do P(Do | H) = 0.00124188  P(Do | S) = 0.00045674
+And P(And | H) = 0.00122959  P(And | S) = 3.26243e-05
+d P(d | H) = 0.00116811  P(d | S) = 3.26243e-05
+da P(da | H) = 0.00116811  P(da | S) = 3.26243e-05
+much P(much | H) = 0.00116811  P(much | S) = 6.52486e-05
+tell P(tell | H) = 0.00115581  P(tell | S) = 0.00045674
+Hey P(Hey | H) = 0.00113122  P(Hey | S) = 0.000195746
+him P(him | H) = 0.00110663  P(him | S) = 6.52486e-05
+take P(take | H) = 0.00110663  P(take | S) = 0.00045674
+Just P(Just | H) = 0.00110663  P(Just | S) = 0.00101135
+any P(any | H) = 0.00109433  P(any | S) = 0.000815607
+an P(an | H) = 0.00108204  P(an | S) = 0.000750359
+way P(way | H) = 0.00106974  P(way | S) = 6.52486e-05
+here P(here | H) = 0.00105745  P(here | S) = 0.000195746
+give P(give | H) = 0.00105745  P(give | S) = 0.00022837
+A P(A | H) = 0.00105745  P(A | S) = 0.000619862
+she P(she | H) = 0.00105745  P(she | S) = 3.26243e-05
+amp P(amp | H) = 0.00104515  P(amp | S) = 3.26243e-05
+has P(has | H) = 0.00104515  P(has | S) = 0.00104398
+ask P(ask | H) = 0.00103285  P(ask | S) = 3.26243e-05
+We P(We | H) = 0.00103285  P(We | S) = 0.0012071
+ok P(ok | H) = 0.000995967  P(ok | S) = 0.000130497
+too P(too | H) = 0.000995967  P(too | S) = 6.52486e-05
+make P(make | H) = 0.000983671  P(make | S) = 0.000391492
+been P(been | H) = 0.000983671  P(been | S) = 0.00143547
+they P(they | H) = 0.000983671  P(they | S) = 0.000489364
+said P(said | H) = 0.000971375  P(said | S) = 3.26243e-05
+didnt P(didnt | H) = 0.000971375  P(didnt | S) = 3.26243e-05
+great P(great | H) = 0.000971375  P(great | S) = 0.00022837
+Are P(Are | H) = 0.000971375  P(Are | S) = 6.52486e-05
+work P(work | H) = 0.000971375  P(work | S) = 0.000130497
+Have P(Have | H) = 0.000971375  P(Have | S) = 0.000195746
+say P(say | H) = 0.000971375  P(say | S) = 6.52486e-05
+you P(you | H) = 0.000946783  P(you | S) = 0.00022837
+me P(me | H) = 0.000946783  P(me | S) = 3.26243e-05
+Oh P(Oh | H) = 0.000934488  P(Oh | S) = 6.52486e-05
+should P(should | H) = 0.000934488  P(should | S) = 6.52486e-05
+The P(The | H) = 0.000934488  P(The | S) = 0.000750359
+doing P(doing | H) = 0.000934488  P(doing | S) = 3.26243e-05
+had P(had | H) = 0.000922192  P(had | S) = 0.000130497
+Can P(Can | H) = 0.000922192  P(Can | S) = 0.000163121
+night P(night | H) = 0.0008976  P(night | S) = 0.000195746
+more P(more | H) = 0.0008976  P(more | S) = 0.000619862
+really P(really | H) = 0.0008976  P(really | S) = 6.52486e-05
+ill P(ill | H) = 0.000885304  P(ill | S) = 6.52486e-05
+them P(them | H) = 0.000885304  P(them | S) = 9.78729e-05
+Hi P(Hi | H) = 0.000885304  P(Hi | S) = 0.000489364
+now P(now | H) = 0.000873008  P(now | S) = 0.000293619
+Good P(Good | H) = 0.000860712  P(Good | S) = 0.000293619
+right P(right | H) = 0.000860712  P(right | S) = 9.78729e-05
+e P(e | H) = 0.000860712  P(e | S) = 9.78729e-05
+today P(today | H) = 0.00083612  P(today | S) = 0.000424116
+phone P(phone | H) = 0.00083612  P(phone | S) = 0.00110923
+later P(later | H) = 0.00083612  P(later | S) = 3.26243e-05
+after P(after | H) = 0.000823825  P(after | S) = 0.000163121
+would P(would | H) = 0.000823825  P(would | S) = 6.52486e-05
+were P(were | H) = 0.000823825  P(were | S) = 0.000163121
+meet P(meet | H) = 0.000823825  P(meet | S) = 0.000195746
+very P(very | H) = 0.000823825  P(very | S) = 9.78729e-05
+It P(It | H) = 0.000811529  P(It | S) = 9.78729e-05
+pick P(pick | H) = 0.000799233  P(pick | S) = 3.26243e-05
+already P(already | H) = 0.000799233  P(already | S) = 6.52486e-05
+did P(did | H) = 0.000786937  P(did | S) = 6.52486e-05
+well P(well | H) = 0.000762345  P(well | S) = 0.000130497
+text P(text | H) = 0.000762345  P(text | S) = 0.00231633
+sure P(sure | H) = 0.000762345  P(sure | S) = 3.26243e-05
+later P(later | H) = 0.000750049  P(later | S) = 3.26243e-05
+Pls P(Pls | H) = 0.000750049  P(Pls | S) = 0.000130497
+Yes P(Yes | H) = 0.000737753  P(Yes | S) = 3.26243e-05
+it P(it | H) = 0.000725457  P(it | S) = 6.52486e-05
+feel P(feel | H) = 0.000725457  P(feel | S) = 3.26243e-05
+Dont P(Dont | H) = 0.000725457  P(Dont | S) = 0.00022837
+where P(where | H) = 0.000713162  P(where | S) = 6.52486e-05
+gonna P(gonna | H) = 0.000713162  P(gonna | S) = 3.26243e-05
+miss P(miss | H) = 0.000713162  P(miss | S) = 0.000260994
+life P(life | H) = 0.000700866  P(life | S) = 9.78729e-05
+Then P(Then | H) = 0.000700866  P(Then | S) = 9.78729e-05
+Yeah P(Yeah | H) = 0.000700866  P(Yeah | S) = 6.52486e-05
+last P(last | H) = 0.00068857  P(last | S) = 0.000163121
+buy P(buy | H) = 0.00068857  P(buy | S) = 3.26243e-05
+keep P(keep | H) = 0.000676274  P(keep | S) = 0.000130497
+cos P(cos | H) = 0.000676274  P(cos | S) = 3.26243e-05
+let P(let | H) = 0.000676274  P(let | S) = 3.26243e-05
+Not P(Not | H) = 0.000676274  P(Not | S) = 0.000130497
+thats P(thats | H) = 0.000676274  P(thats | S) = 3.26243e-05
+went P(went | H) = 0.000663978  P(went | S) = 3.26243e-05
+anything P(anything | H) = 0.000663978  P(anything | S) = 3.26243e-05
+He P(He | H) = 0.000663978  P(He | S) = 3.26243e-05
+before P(before | H) = 0.000663978  P(before | S) = 0.000130497
+week P(week | H) = 0.000651682  P(week | S) = 0.00159859
+Ü P(Ü | H) = 0.000651682  P(Ü | S) = 3.26243e-05
+sent P(sent | H) = 0.000651682  P(sent | S) = 0.000358867
+our P(our | H) = 0.000651682  P(our | S) = 0.00251207
+morning P(morning | H) = 0.000651682  P(morning | S) = 3.26243e-05
+wat P(wat | H) = 0.000651682  P(wat | S) = 6.52486e-05
+told P(told | H) = 0.000651682  P(told | S) = 3.26243e-05
+wan P(wan | H) = 0.000651682  P(wan | S) = 3.26243e-05
+his P(his | H) = 0.000639386  P(his | S) = 6.52486e-05
+something P(something | H) = 0.000639386  P(something | S) = 3.26243e-05
+lor P(lor | H) = 0.000639386  P(lor | S) = 3.26243e-05
+Is P(Is | H) = 0.000639386  P(Is | S) = 6.52486e-05
+many P(many | H) = 0.000639386  P(many | S) = 0.000130497
+hope P(hope | H) = 0.000639386  P(hope | S) = 9.78729e-05
+wont P(wont | H) = 0.000639386  P(wont | S) = 0.000130497
+who P(who | H) = 0.00062709  P(who | S) = 0.00159859
+Happy P(Happy | H) = 0.00062709  P(Happy | S) = 3.26243e-05
+Did P(Did | H) = 0.00062709  P(Did | S) = 6.52486e-05
+Lol P(Lol | H) = 0.000614794  P(Lol | S) = 3.26243e-05
+tomorrow P(tomorrow | H) = 0.000614794  P(tomorrow | S) = 3.26243e-05
+around P(around | H) = 0.000614794  P(around | S) = 9.78729e-05
+thing P(thing | H) = 0.000614794  P(thing | S) = 6.52486e-05
+could P(could | H) = 0.000614794  P(could | S) = 0.000260994
+things P(things | H) = 0.000602499  P(things | S) = 9.78729e-05
+wait P(wait | H) = 0.000602499  P(wait | S) = 9.78729e-05
+sleep P(sleep | H) = 0.000590203  P(sleep | S) = 3.26243e-05
+new P(new | H) = 0.000590203  P(new | S) = 0.00140284
+money P(money | H) = 0.000590203  P(money | S) = 0.000130497
+leave P(leave | H) = 0.000590203  P(leave | S) = 9.78729e-05
+off P(off | H) = 0.000590203  P(off | S) = 0.000163121
+other P(other | H) = 0.000590203  P(other | S) = 0.000130497
+number P(number | H) = 0.000590203  P(number | S) = 0.000946105
+K P(K | H) = 0.000590203  P(K | S) = 3.26243e-05
+Ur P(Ur | H) = 0.000590203  P(Ur | S) = 0.000521989
+late P(late | H) = 0.000577907  P(late | S) = 6.52486e-05
+find P(find | H) = 0.000577907  P(find | S) = 0.000619862
+b P(b | H) = 0.000577907  P(b | S) = 0.000195746
+dun P(dun | H) = 0.000577907  P(dun | S) = 3.26243e-05
+Well P(Well | H) = 0.000577907  P(Well | S) = 9.78729e-05
+always P(always | H) = 0.000577907  P(always | S) = 3.26243e-05
+Thats P(Thats | H) = 0.000577907  P(Thats | S) = 3.26243e-05
+1 P(1 | H) = 0.000577907  P(1 | S) = 0.00110923
+also P(also | H) = 0.000577907  P(also | S) = 0.000130497
+She P(She | H) = 0.000565611  P(She | S) = 3.26243e-05
+care P(care | H) = 0.000565611  P(care | S) = 0.000163121
+place P(place | H) = 0.000565611  P(place | S) = 0.000195746
+Gud P(Gud | H) = 0.000565611  P(Gud | S) = 3.26243e-05
+down P(down | H) = 0.000565611  P(down | S) = 6.52486e-05
+coming P(coming | H) = 0.000553315  P(coming | S) = 3.26243e-05
+msg P(msg | H) = 0.000553315  P(msg | S) = 0.000652486
+Hope P(Hope | H) = 0.000553315  P(Hope | S) = 9.78729e-05
+over P(over | H) = 0.000541019  P(over | S) = 0.00022837
+getting P(getting | H) = 0.000541019  P(getting | S) = 0.000163121
+youre P(youre | H) = 0.000541019  P(youre | S) = 6.52486e-05
+When P(When | H) = 0.000541019  P(When | S) = 0.000130497
+free P(free | H) = 0.000541019  P(free | S) = 0.00202271
+why P(why | H) = 0.000541019  P(why | S) = 0.000195746
+Ive P(Ive | H) = 0.000541019  P(Ive | S) = 6.52486e-05
+us P(us | H) = 0.000528723  P(us | S) = 0.000195746
+next P(next | H) = 0.000528723  P(next | S) = 0.00045674
+c P(c | H) = 0.000528723  P(c | S) = 0.000130497
+happy P(happy | H) = 0.000528723  P(happy | S) = 6.52486e-05
+even P(even | H) = 0.000516427  P(even | S) = 0.00022837
+first P(first | H) = 0.000516427  P(first | S) = 0.000195746
+people P(people | H) = 0.000516427  P(people | S) = 0.000130497
+3 P(3 | H) = 0.000516427  P(3 | S) = 0.000717735
+Haha P(Haha | H) = 0.000516427  P(Haha | S) = 3.26243e-05
+someone P(someone | H) = 0.000516427  P(someone | S) = 0.000260994
+Where P(Where | H) = 0.000504131  P(Where | S) = 6.52486e-05
+friends P(friends | H) = 0.000504131  P(friends | S) = 0.000195746
+This P(This | H) = 0.000504131  P(This | S) = 0.0013376
+Yup P(Yup | H) = 0.000504131  P(Yup | S) = 3.26243e-05
+few P(few | H) = 0.000504131  P(few | S) = 3.26243e-05
+lunch P(lunch | H) = 0.000504131  P(lunch | S) = 3.26243e-05
+again P(again | H) = 0.000504131  P(again | S) = 9.78729e-05
+having P(having | H) = 0.000504131  P(having | S) = 3.26243e-05
+thought P(thought | H) = 0.000504131  P(thought | S) = 6.52486e-05
+which P(which | H) = 0.000491836  P(which | S) = 0.000293619
+try P(try | H) = 0.000491836  P(try | S) = 0.000130497
+babe P(babe | H) = 0.000491836  P(babe | S) = 0.000195746
+day P(day | H) = 0.000491836  P(day | S) = 3.26243e-05
+thk P(thk | H) = 0.000491836  P(thk | S) = 3.26243e-05
+sorry P(sorry | H) = 0.00047954  P(sorry | S) = 3.26243e-05
+That P(That | H) = 0.000467244  P(That | S) = 9.78729e-05
+being P(being | H) = 0.000467244  P(being | S) = 0.00022837
+stuff P(stuff | H) = 0.000467244  P(stuff | S) = 3.26243e-05
+In P(In | H) = 0.000454948  P(In | S) = 9.78729e-05
+ok P(ok | H) = 0.000454948  P(ok | S) = 3.26243e-05
+dat P(dat | H) = 0.000454948  P(dat | S) = 3.26243e-05
+please P(please | H) = 0.000454948  P(please | S) = 0.000619862
+Will P(Will | H) = 0.000454948  P(Will | S) = 0.000130497
+long P(long | H) = 0.000442652  P(long | S) = 3.26243e-05
+job P(job | H) = 0.000442652  P(job | S) = 3.26243e-05
+fine P(fine | H) = 0.000442652  P(fine | S) = 3.26243e-05
+than P(than | H) = 0.000442652  P(than | S) = 9.78729e-05
+u P(u | H) = 0.000442652  P(u | S) = 9.78729e-05
+nice P(nice | H) = 0.000430356  P(nice | S) = 3.26243e-05
+havent P(havent | H) = 0.000430356  P(havent | S) = 6.52486e-05
+dear P(dear | H) = 0.000430356  P(dear | S) = 3.26243e-05
+Dear P(Dear | H) = 0.000430356  P(Dear | S) = 0.000554613
+soon P(soon | H) = 0.000430356  P(soon | S) = 0.000130497
+wish P(wish | H) = 0.000430356  P(wish | S) = 9.78729e-05
+Or P(Or | H) = 0.000430356  P(Or | S) = 0.000130497
+car P(car | H) = 0.00041806  P(car | S) = 3.26243e-05
+same P(same | H) = 0.00041806  P(same | S) = 3.26243e-05
+use P(use | H) = 0.00041806  P(use | S) = 0.00022837
+there P(there | H) = 0.00041806  P(there | S) = 3.26243e-05
+talk P(talk | H) = 0.00041806  P(talk | S) = 0.000163121
+eat P(eat | H) = 0.00041806  P(eat | S) = 3.26243e-05
+person P(person | H) = 0.00041806  P(person | S) = 6.52486e-05
+Your P(Your | H) = 0.00041806  P(Your | S) = 0.00234895
+today P(today | H) = 0.00041806  P(today | S) = 3.26243e-05
+big P(big | H) = 0.00041806  P(big | S) = 3.26243e-05
+finish P(finish | H) = 0.00041806  P(finish | S) = 3.26243e-05
+All P(All | H) = 0.000405764  P(All | S) = 6.52486e-05
+up P(up | H) = 0.000405764  P(up | S) = 3.26243e-05
+5 P(5 | H) = 0.000405764  P(5 | S) = 0.000326243
+yet P(yet | H) = 0.000405764  P(yet | S) = 9.78729e-05
+special P(special | H) = 0.000405764  P(special | S) = 0.00022837
+better P(better | H) = 0.000405764  P(better | S) = 6.52486e-05
+Hello P(Hello | H) = 0.000405764  P(Hello | S) = 0.000130497
+every P(every | H) = 0.000405764  P(every | S) = 0.0010766
+ME P(ME | H) = 0.000405764  P(ME | S) = 3.26243e-05
+another P(another | H) = 0.000405764  P(another | S) = 9.78729e-05
+meeting P(meeting | H) = 0.000393468  P(meeting | S) = 3.26243e-05
+called P(called | H) = 0.000393468  P(called | S) = 6.52486e-05
+mind P(mind | H) = 0.000393468  P(mind | S) = 9.78729e-05
+help P(help | H) = 0.000393468  P(help | S) = 0.000326243
+might P(might | H) = 0.000393468  P(might | S) = 3.26243e-05
+never P(never | H) = 0.000393468  P(never | S) = 6.52486e-05
+because P(because | H) = 0.000393468  P(because | S) = 9.78729e-05
+guys P(guys | H) = 0.000393468  P(guys | S) = 0.00022837
+Please P(Please | H) = 0.000393468  P(Please | S) = 0.00114185
+heart P(heart | H) = 0.000381173  P(heart | S) = 9.78729e-05
+done P(done | H) = 0.000381173  P(done | S) = 9.78729e-05
+watch P(watch | H) = 0.000381173  P(watch | S) = 3.26243e-05
+They P(They | H) = 0.000381173  P(They | S) = 9.78729e-05
+year P(year | H) = 0.000381173  P(year | S) = 0.00022837
+Love P(Love | H) = 0.000381173  P(Love | S) = 3.26243e-05
+smile P(smile | H) = 0.000381173  P(smile | S) = 3.26243e-05
+R P(R | H) = 0.000381173  P(R | S) = 0.000358867
+friend P(friend | H) = 0.000381173  P(friend | S) = 0.000391492
+waiting P(waiting | H) = 0.000381173  P(waiting | S) = 0.000521989
+into P(into | H) = 0.000368877  P(into | S) = 0.00022837
+bit P(bit | H) = 0.000368877  P(bit | S) = 3.26243e-05
+lar P(lar | H) = 0.000368877  P(lar | S) = 3.26243e-05
+class P(class | H) = 0.000368877  P(class | S) = 9.78729e-05
+best P(best | H) = 0.000368877  P(best | S) = 0.000326243
+quite P(quite | H) = 0.000368877  P(quite | S) = 3.26243e-05
+name P(name | H) = 0.000368877  P(name | S) = 0.000293619
+Aight P(Aight | H) = 0.000368877  P(Aight | S) = 3.26243e-05
+pls P(pls | H) = 0.000368877  P(pls | S) = 0.000260994
+message P(message | H) = 0.000368877  P(message | S) = 0.000848232
+tonight P(tonight | H) = 0.000356581  P(tonight | S) = 9.78729e-05
+Wat P(Wat | H) = 0.000356581  P(Wat | S) = 3.26243e-05
+ever P(ever | H) = 0.000356581  P(ever | S) = 6.52486e-05
+hes P(hes | H) = 0.000356581  P(hes | S) = 3.26243e-05
+ive P(ive | H) = 0.000356581  P(ive | S) = 3.26243e-05
+two P(two | H) = 0.000356581  P(two | S) = 6.52486e-05
+ya P(ya | H) = 0.000356581  P(ya | S) = 6.52486e-05
+early P(early | H) = 0.000356581  P(early | S) = 3.26243e-05
+lot P(lot | H) = 0.000344285  P(lot | S) = 3.26243e-05
+tonight P(tonight | H) = 0.000344285  P(tonight | S) = 3.26243e-05
+made P(made | H) = 0.000344285  P(made | S) = 6.52486e-05
+da P(da | H) = 0.000344285  P(da | S) = 3.26243e-05
+check P(check | H) = 0.000344285  P(check | S) = 3.26243e-05
+As P(As | H) = 0.000344285  P(As | S) = 0.000424116
+man P(man | H) = 0.000344285  P(man | S) = 6.52486e-05
+without P(without | H) = 0.000344285  P(without | S) = 3.26243e-05
+trying P(trying | H) = 0.000344285  P(trying | S) = 0.000521989
+Thanks P(Thanks | H) = 0.000344285  P(Thanks | S) = 0.00045674
+tomorrow P(tomorrow | H) = 0.000344285  P(tomorrow | S) = 0.000260994
+start P(start | H) = 0.000344285  P(start | S) = 0.000130497
+everything P(everything | H) = 0.000344285  P(everything | S) = 3.26243e-05
+dis P(dis | H) = 0.000331989  P(dis | S) = 3.26243e-05
+Now P(Now | H) = 0.000331989  P(Now | S) = 0.00045674
+dinner P(dinner | H) = 0.000331989  P(dinner | S) = 3.26243e-05
+home P(home | H) = 0.000331989  P(home | S) = 3.26243e-05
+v P(v | H) = 0.000331989  P(v | S) = 9.78729e-05
+wif P(wif | H) = 0.000331989  P(wif | S) = 3.26243e-05
+able P(able | H) = 0.000331989  P(able | S) = 3.26243e-05
+goes P(goes | H) = 0.000331989  P(goes | S) = 3.26243e-05
+says P(says | H) = 0.000331989  P(says | S) = 3.26243e-05
+hi P(hi | H) = 0.000331989  P(hi | S) = 6.52486e-05
+little P(little | H) = 0.000331989  P(little | S) = 0.000130497
+problem P(problem | H) = 0.000331989  P(problem | S) = 3.26243e-05
+wanted P(wanted | H) = 0.000331989  P(wanted | S) = 6.52486e-05
+pay P(pay | H) = 0.000331989  P(pay | S) = 6.52486e-05
+cool P(cool | H) = 0.000331989  P(cool | S) = 6.52486e-05
+stop P(stop | H) = 0.000331989  P(stop | S) = 0.00130497
+came P(came | H) = 0.000319693  P(came | S) = 6.52486e-05
+shit P(shit | H) = 0.000319693  P(shit | S) = 3.26243e-05
+probably P(probably | H) = 0.000319693  P(probably | S) = 3.26243e-05
+abt P(abt | H) = 0.000319693  P(abt | S) = 3.26243e-05
+dear P(dear | H) = 0.000319693  P(dear | S) = 3.26243e-05
+bad P(bad | H) = 0.000319693  P(bad | S) = 3.26243e-05
+sweet P(sweet | H) = 0.000319693  P(sweet | S) = 3.26243e-05
+hear P(hear | H) = 0.000319693  P(hear | S) = 0.000130497
+ready P(ready | H) = 0.000319693  P(ready | S) = 0.00022837
+left P(left | H) = 0.000319693  P(left | S) = 6.52486e-05
+til P(til | H) = 0.000319693  P(til | S) = 3.26243e-05
+face P(face | H) = 0.000319693  P(face | S) = 3.26243e-05
+luv P(luv | H) = 0.000319693  P(luv | S) = 3.26243e-05
+half P(half | H) = 0.000319693  P(half | S) = 0.000195746
+then P(then | H) = 0.000319693  P(then | S) = 3.26243e-05
+room P(room | H) = 0.000319693  P(room | S) = 3.26243e-05
+that P(that | H) = 0.000307397  P(that | S) = 3.26243e-05
+school P(school | H) = 0.000307397  P(school | S) = 3.26243e-05
+means P(means | H) = 0.000307397  P(means | S) = 3.26243e-05
+girl P(girl | H) = 0.000307397  P(girl | S) = 9.78729e-05
+look P(look | H) = 0.000307397  P(look | S) = 0.000130497
+forgot P(forgot | H) = 0.000307397  P(forgot | S) = 3.26243e-05
+doesnt P(doesnt | H) = 0.000307397  P(doesnt | S) = 3.26243e-05
+Got P(Got | H) = 0.000307397  P(Got | S) = 9.78729e-05
+may P(may | H) = 0.000307397  P(may | S) = 0.000195746
+put P(put | H) = 0.000307397  P(put | S) = 6.52486e-05
+7 P(7 | H) = 0.000307397  P(7 | S) = 9.78729e-05
+MY P(MY | H) = 0.000307397  P(MY | S) = 3.26243e-05
+night P(night | H) = 0.000307397  P(night | S) = 6.52486e-05
+liao P(liao | H) = 0.000307397  P(liao | S) = 3.26243e-05
+Tell P(Tell | H) = 0.000307397  P(Tell | S) = 0.000130497
+AT P(AT | H) = 0.000295101  P(AT | S) = 3.26243e-05
+y P(y | H) = 0.000295101  P(y | S) = 3.26243e-05
+Am P(Am | H) = 0.000295101  P(Am | S) = 9.78729e-05
+yeah P(yeah | H) = 0.000295101  P(yeah | S) = 3.26243e-05
+enough P(enough | H) = 0.000295101  P(enough | S) = 9.78729e-05
+guess P(guess | H) = 0.000295101  P(guess | S) = 6.52486e-05
+bring P(bring | H) = 0.000295101  P(bring | S) = 3.26243e-05
+working P(working | H) = 0.000295101  P(working | S) = 3.26243e-05
+remember P(remember | H) = 0.000295101  P(remember | S) = 3.26243e-05
+THE P(THE | H) = 0.000295101  P(THE | S) = 0.000163121
+reach P(reach | H) = 0.000295101  P(reach | S) = 0.000195746
+month P(month | H) = 0.000295101  P(month | S) = 9.78729e-05
+Hows P(Hows | H) = 0.000295101  P(Hows | S) = 3.26243e-05
+end P(end | H) = 0.000295101  P(end | S) = 0.000195746
+here P(here | H) = 0.000295101  P(here | S) = 3.26243e-05
+princess P(princess | H) = 0.000295101  P(princess | S) = 3.26243e-05
+bus P(bus | H) = 0.000295101  P(bus | S) = 3.26243e-05
+boy P(boy | H) = 0.000295101  P(boy | S) = 3.26243e-05
+9 P(9 | H) = 0.000282805  P(9 | S) = 3.26243e-05
+Ok P(Ok | H) = 0.000282805  P(Ok | S) = 3.26243e-05
+IM P(IM | H) = 0.000282805  P(IM | S) = 3.26243e-05
+makes P(makes | H) = 0.000282805  P(makes | S) = 3.26243e-05
+run P(run | H) = 0.000282805  P(run | S) = 3.26243e-05
+plan P(plan | H) = 0.000282805  P(plan | S) = 3.26243e-05
+most P(most | H) = 0.000282805  P(most | S) = 9.78729e-05
+already P(already | H) = 0.000282805  P(already | S) = 3.26243e-05
+den P(den | H) = 0.000282805  P(den | S) = 3.26243e-05
+6 P(6 | H) = 0.000282805  P(6 | S) = 0.00022837
+ltDECIMALgt P(ltDECIMALgt | H) = 0.000282805  P(ltDECIMALgt | S) = 3.26243e-05
+YOU P(YOU | H) = 0.000282805  P(YOU | S) = 0.000717735
+hair P(hair | H) = 0.000282805  P(hair | S) = 3.26243e-05
+watching P(watching | H) = 0.000282805  P(watching | S) = 3.26243e-05
+hav P(hav | H) = 0.000282805  P(hav | S) = 3.26243e-05
+once P(once | H) = 0.000282805  P(once | S) = 3.26243e-05
+Why P(Why | H) = 0.000282805  P(Why | S) = 0.000195746
+bed P(bed | H) = 0.000282805  P(bed | S) = 3.26243e-05
+those P(those | H) = 0.000282805  P(those | S) = 3.26243e-05
+guy P(guy | H) = 0.000282805  P(guy | S) = 3.26243e-05
+Me P(Me | H) = 0.000282805  P(Me | S) = 6.52486e-05
+out P(out | H) = 0.000282805  P(out | S) = 0.000163121
+pain P(pain | H) = 0.00027051  P(pain | S) = 3.26243e-05
+tot P(tot | H) = 0.00027051  P(tot | S) = 3.26243e-05
+wanna P(wanna | H) = 0.00027051  P(wanna | S) = 0.000163121
+until P(until | H) = 0.00027051  P(until | S) = 0.000195746
+Yo P(Yo | H) = 0.00027051  P(Yo | S) = 3.26243e-05
+baby P(baby | H) = 0.00027051  P(baby | S) = 9.78729e-05
+away P(away | H) = 0.00027051  P(away | S) = 0.000163121
+actually P(actually | H) = 0.00027051  P(actually | S) = 3.26243e-05
+days P(days | H) = 0.00027051  P(days | S) = 0.000260994
+times P(times | H) = 0.00027051  P(times | S) = 3.26243e-05
+jus P(jus | H) = 0.00027051  P(jus | S) = 3.26243e-05
+between P(between | H) = 0.00027051  P(between | S) = 0.000358867
+Ya P(Ya | H) = 0.00027051  P(Ya | S) = 3.26243e-05
+thanks P(thanks | H) = 0.00027051  P(thanks | S) = 6.52486e-05
+making P(making | H) = 0.00027051  P(making | S) = 3.26243e-05
+since P(since | H) = 0.00027051  P(since | S) = 9.78729e-05
+leh P(leh | H) = 0.00027051  P(leh | S) = 3.26243e-05
+mail P(mail | H) = 0.00027051  P(mail | S) = 3.26243e-05
+Call P(Call | H) = 0.00027051  P(Call | S) = 0.00450215
+IS P(IS | H) = 0.00027051  P(IS | S) = 0.000293619
+saw P(saw | H) = 0.00027051  P(saw | S) = 3.26243e-05
+reply P(reply | H) = 0.00027051  P(reply | S) = 0.00192483
+while P(while | H) = 0.00027051  P(while | S) = 0.000130497
+message P(message | H) = 0.000258214  P(message | S) = 6.52486e-05
+haf P(haf | H) = 0.000258214  P(haf | S) = 3.26243e-05
+tv P(tv | H) = 0.000258214  P(tv | S) = 9.78729e-05
+id P(id | H) = 0.000258214  P(id | S) = 3.26243e-05
+wake P(wake | H) = 0.000258214  P(wake | S) = 3.26243e-05
+hurt P(hurt | H) = 0.000258214  P(hurt | S) = 3.26243e-05
+too P(too | H) = 0.000258214  P(too | S) = 3.26243e-05
+wants P(wants | H) = 0.000258214  P(wants | S) = 6.52486e-05
+birthday P(birthday | H) = 0.000258214  P(birthday | S) = 3.26243e-05
+house P(house | H) = 0.000258214  P(house | S) = 6.52486e-05
+oso P(oso | H) = 0.000258214  P(oso | S) = 3.26243e-05
+Cos P(Cos | H) = 0.000258214  P(Cos | S) = 3.26243e-05
+mean P(mean | H) = 0.000258214  P(mean | S) = 3.26243e-05
+online P(online | H) = 0.000258214  P(online | S) = 3.26243e-05
+sat P(sat | H) = 0.000258214  P(sat | S) = 3.26243e-05
+hows P(hows | H) = 0.000258214  P(hows | S) = 3.26243e-05
+till P(till | H) = 0.000258214  P(till | S) = 0.000130497
+saying P(saying | H) = 0.000258214  P(saying | S) = 3.26243e-05
+Was P(Was | H) = 0.000258214  P(Was | S) = 3.26243e-05
+account P(account | H) = 0.000258214  P(account | S) = 9.78729e-05
+real P(real | H) = 0.000258214  P(real | S) = 0.000326243
+noe P(noe | H) = 0.000258214  P(noe | S) = 3.26243e-05
+x P(x | H) = 0.000258214  P(x | S) = 0.000163121
+time P(time | H) = 0.000258214  P(time | S) = 6.52486e-05
