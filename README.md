@@ -1,4 +1,5 @@
 # text-classification
+Determines whether text message input from a test set (`spam`) is spam or ham based on the input of a training set (`hamspam`). Whether a text is spam or ham is known for `hamspam` (0 = ham, 1 = spam). Based on the 13.4% of text messages for `hamspam` that are spam, the algorithm determines that 85.5% of texts in `spam` are spam (14.4 percentage points off).
 ## Output:
 ```
 Naive Bayes text classification with SMS spam/ham
