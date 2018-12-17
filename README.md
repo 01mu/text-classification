@@ -25,15 +25,15 @@ Total: 5574
 Number of unique words in training set: 12978
 ```
 ## Output
-`InNegAndPos`: in both ham and spam (training)
-`InNegNotPos`: in ham text and not spam (training)
-`InPosNotNeg`: in spam text and not ham (training)
-`ProbDiffNeg`: greatest difference with ham prob being greater (training)
-`ProbDiffPos`: greatest difference with spam prob being greater (training)
-`TopNeg`: top ham (training)
-`TopPos`: top spam (training)
-`topHamTestHS`: top ham (test)
-`topSpamTestHS`: top spam (test)
+* `InNegAndPos`: in both ham and spam (training)
+* `InNegNotPos`: in ham text and not spam (training)
+* `InPosNotNeg`: in spam text and not ham (training)
+* `ProbDiffNeg`: greatest difference with ham prob being greater (training)
+* `ProbDiffPos`: greatest difference with spam prob being greater (training)
+* `TopNeg`: top ham (training)
+* `TopPos`: top spam (training)
+* `topHamTestHS`: top ham (test)
+* `topSpamTestHS`: top spam (test)
 ## Sources
 * UCI Machine Learning Repository: SMS Spam Collection Data Set
 ** https://archive.ics.uci.edu/ml/datasets/sms+spam+collection
