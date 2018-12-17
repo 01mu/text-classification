@@ -51,8 +51,18 @@ void determineWordProbs();
 // determine whether new set inputs are ham/spam based on old probabilities
 void determineNewInputClass();
 
-void outputTestSetFiles(vector<wordProb>);
-void outputTrainingSetFiles(vector<wordProb>);
+void outputTestSetFiles(vector<wordProb> &);
+void outputTrainingSetFiles(vector<wordProb> &);
+
+void topHamTestHS(int, vector<wordProb> &);
+void topSpamTestHS(int, vector<wordProb> &);
+void ProbDiffPos(vector<wordProb> &);
+void ProbDiffNeg(vector<wordProb> &);
+void TopPos(vector<string> &, vector<string> &, vector<wordProb> &);
+void TopNeg(vector<string> &, vector<string> &, vector<wordProb> &);
+void InPosNotNeg(vector<string> &, vector<string> &);
+void InNegNotPos(vector<string> &, vector<string> &);
+void InNegAndPos(vector<string> &, vector<string> &);
 
 // probability of positive reviews in training set (spam)
 extern double posProb;

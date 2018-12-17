@@ -20,31 +20,32 @@ vector<wordProb> wordProbVec;
 vector<string> rev_txt;
 vector<int> quality;
 
-bool compareByLengthPos(const wordProb &a, const wordProb &b)
+bool compareByLengthPos(const wordProb & a, const wordProb & b)
 {
     return a.probPos < b.probPos;
 }
 
-bool compareByLengthNeg(const wordProb &a, const wordProb &b)
+bool compareByLengthNeg(const wordProb & a, const wordProb & b)
 {
     return a.probNeg < b.probNeg;
 }
 
-vector<string> tokenize(const char *str, char c = ' ')
+vector<string> tokenize(const char * str, char c = ' ')
 {
     vector<string> result;
 
     do
     {
-        const char *begin = str;
+        const char * begin = str;
 
-        while(*str != c && *str)
+        while(* str != c && * str)
         {
             str++;
         }
 
         result.push_back(string(begin, str));
-    } while (0 != *str++);
+    }
+    while (0 != * str++);
 
     return result;
 }
@@ -298,16 +299,20 @@ void determineNewInputClass()
         << checkedProbs.size();
 }
 
-void outputTestSetFiles(vector<wordProb> checkedProbs)
+void outputTestSetFiles(vector<wordProb> & checkedProbs)
 {
     int checkedProbsSize = checkedProbs.size();
 
-    // top ham from test set
+    topHamTestHS(checkedProbsSize, checkedProbs);
+    topSpamTestHS(checkedProbsSize, checkedProbs);
+}
 
+void topHamTestHS(int checkedProbsSize, vector<wordProb> & checkedProbs)
+{
     std::sort(checkedProbs.begin(), checkedProbs.end(), compareByLengthNeg);
 
     ofstream topHamHS;
-    topHamHS.open("output/topHamTestHS.txt");
+    topHamHS.open("output/topHamTestHS");
 
     for(int i = checkedProbsSize - 1; i > checkedProbsSize - 250; i--)
     {
@@ -317,13 +322,15 @@ void outputTestSetFiles(vector<wordProb> checkedProbs)
     }
 
     topHamHS.close();
+}
 
-    // top spam from test set
+void topSpamTestHS(int checkedProbsSize, vector<wordProb> & checkedProbs)
+{
 
     std::sort(checkedProbs.begin(), checkedProbs.end(), compareByLengthPos);
 
     ofstream topSpamHS;
-    topSpamHS.open("output/topSpamTestHS.txt");
+    topSpamHS.open("output/topSpamTestHS");
 
     for(int i = checkedProbsSize - 1; i > checkedProbsSize - 250; i--)
     {
@@ -335,12 +342,27 @@ void outputTestSetFiles(vector<wordProb> checkedProbs)
     topSpamHS.close();
 }
 
-void outputTrainingSetFiles(vector<wordProb> wordProbVect)
+void outputTrainingSetFiles(vector<wordProb> & wordProbVect)
 {
-    // highest difference with spam prob being greater
+    vector<string> top500Pos, top500Neg;
 
+    ProbDiffPos(wordProbVect);
+    ProbDiffNeg(wordProbVect);
+
+    TopPos(top500Neg, top500Pos, wordProbVect);
+    TopNeg(top500Neg, top500Pos, wordProbVect);
+
+    sort(top500Pos.begin(), top500Pos.begin() + top500Pos.size());
+    sort(top500Neg.begin(), top500Neg.begin() + top500Neg.size());
+
+    InPosNotNeg(top500Neg, top500Pos);
+    InNegNotPos(top500Neg, top500Pos);
+    InNegAndPos(top500Neg, top500Pos);
+}
+
+void ProbDiffPos(vector<wordProb> & wordProbVect)
+{
     vector<wordProb> diffsPos;
-    vector<wordProb> diffsNeg;
     wordProb temp;
 
     int wordProbVecSize = wordProbVect.size();
@@ -359,7 +381,7 @@ void outputTrainingSetFiles(vector<wordProb> wordProbVect)
     std::sort(diffsPos.begin(), diffsPos.end(), compareByLengthPos);
 
     ofstream diffsPosTxt;
-    diffsPosTxt.open("output/ProbDiffPos.txt");
+    diffsPosTxt.open("output/ProbDiffPos");
 
     for(int i = 0; i < (int) diffsPos.size(); i++)
     {
@@ -368,8 +390,12 @@ void outputTrainingSetFiles(vector<wordProb> wordProbVect)
     }
 
     diffsPosTxt.close();
+}
 
-    // highest difference with ham prob being greater
+void ProbDiffNeg(vector<wordProb> & wordProbVect)
+{
+    vector<wordProb> diffsNeg;
+    wordProb temp;
 
     for(int i = 0; i < (int) wordProbVect.size(); i++)
     {
@@ -385,7 +411,7 @@ void outputTrainingSetFiles(vector<wordProb> wordProbVect)
     std::sort(diffsNeg.begin(), diffsNeg.end(), compareByLengthNeg);
 
     ofstream diffsNegTxt;
-    diffsNegTxt.open("output/ProbDiffNeg.txt");
+    diffsNegTxt.open("output/ProbDiffNeg");
 
     for(int i = 0; i < (int) diffsNeg.size(); i++)
     {
@@ -394,15 +420,17 @@ void outputTrainingSetFiles(vector<wordProb> wordProbVect)
     }
 
     diffsNegTxt.close();
+}
 
-    // tom spam - training
-
-    vector<string> top500Pos, top500Neg;
+void TopPos(vector<string> & top500Pos, vector<string> & top500Neg,
+    vector<wordProb> & wordProbVect)
+{
+    int wordProbVecSize = wordProbVect.size();
 
     std::sort(wordProbVect.begin(), wordProbVect.end(), compareByLengthPos);
 
     ofstream TopPos;
-    TopPos.open("output/TopPos.txt");
+    TopPos.open("output/TopPos");
 
     for(int i = wordProbVecSize - 1; i > wordProbVecSize - 500; i--)
     {
@@ -423,13 +451,17 @@ void outputTrainingSetFiles(vector<wordProb> wordProbVect)
             top500Pos.push_back(wordProbVect.at(i).word);
         }
     }
+}
 
-    // top ham - training
+void TopNeg(vector<string> & top500Pos, vector<string> & top500Neg,
+    vector<wordProb> & wordProbVect)
+{
+    int wordProbVecSize = wordProbVect.size();
 
     std::sort(wordProbVect.begin(), wordProbVect.end(), compareByLengthNeg);
 
     ofstream TopNeg;
-    TopNeg.open("output/TopNeg.txt");
+    TopNeg.open("output/TopNeg");
 
     for(int i = wordProbVecSize - 1; i > wordProbVecSize - 500; i--)
     {
@@ -450,19 +482,17 @@ void outputTrainingSetFiles(vector<wordProb> wordProbVect)
             top500Neg.push_back(wordProbVect.at(i).word);
         }
     }
+}
 
-    // set operation training set outputs - in spam text and not ham
-
+void InNegNotPos(vector<string> & top500Neg, vector<string> & top500Pos)
+{
     vector<string> setOp;
-
-    sort(top500Pos.begin(), top500Pos.begin() + top500Pos.size());
-    sort(top500Neg.begin(), top500Neg.begin() + top500Neg.size());
 
     set_difference(top500Pos.begin(), top500Pos.end(), top500Neg.begin(),
         top500Neg.end(), back_inserter(setOp));
 
     ofstream InPosNotNeg;
-    InPosNotNeg.open("output/InPosNotNeg.txt");
+    InPosNotNeg.open("output/InNegNotPos");
 
     for(int i = 0; i < (int) setOp.size(); i++)
     {
@@ -470,16 +500,17 @@ void outputTrainingSetFiles(vector<wordProb> wordProbVect)
     }
 
     InPosNotNeg.close();
+}
 
-    setOp.clear();
-
-    // set operation training set outputs - in ham text and not spam
+void InPosNotNeg(vector<string> & top500Neg, vector<string> & top500Pos)
+{
+    vector<string> setOp;
 
     set_difference(top500Neg.begin(), top500Neg.end(), top500Pos.begin(),
         top500Pos.end(), back_inserter(setOp));
 
     ofstream InNegNotPos;
-    InNegNotPos.open("output/InNegNotPos.txt");
+    InNegNotPos.open("output/InPosNotNeg");
 
     for(int i = 0; i < (int) setOp.size(); i++)
     {
@@ -487,16 +518,17 @@ void outputTrainingSetFiles(vector<wordProb> wordProbVect)
     }
 
     InNegNotPos.close();
+}
 
-    setOp.clear();
-
-    // set operation training set outputs - in both ham and spam
+void InNegAndPos(vector<string> & top500Neg, vector<string> & top500Pos)
+{
+    vector<string> setOp;
 
     set_intersection(top500Neg.begin(), top500Neg.end(), top500Pos.begin(),
         top500Pos.end(), back_inserter(setOp));
 
     ofstream InNegAndPos;
-    InNegAndPos.open("output/InNegAndPos.txt");
+    InNegAndPos.open("output/InNegAndPos");
 
     for(int i = 0; i < (int) setOp.size(); i++)
     {

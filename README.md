@@ -10,7 +10,7 @@ Tokenizing and assigning text and classification inputs to training set vector
 Determining probabilities for each word in training set
 Determining whether each input in 'spam' is spam or ham
 
-Test set (spam):z
+Test set (spam):
 Spam %: 85.5876
 Ham %: 14.4124
 Total: 1353
