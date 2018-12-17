@@ -36,8 +36,8 @@ Number of unique words in training set: 12978
 * `topSpamTestHS`: top spam (test)
 ## Sources
 * UCI Machine Learning Repository: SMS Spam Collection Data Set
-** https://archive.ics.uci.edu/ml/datasets/sms+spam+collection
+  * https://archive.ics.uci.edu/ml/datasets/sms+spam+collection
 * Computing at Dublin Institute of Technology - SMS Spam Dataset
-** http://www.dit.ie/computing/research/resources/smsdata/
+  * http://www.dit.ie/computing/research/resources/smsdata/
 * Text Classification Using Naive Bayes
-** https://www.youtube.com/watch?v=EGKeC2S44Rs
+  * https://www.youtube.com/watch?v=EGKeC2S44Rs
