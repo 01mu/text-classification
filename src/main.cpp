@@ -5,7 +5,7 @@
 
 #include <iostream>
 
-#include "tc.cpp"
+#include "lib/tc.cpp"
 
 using namespace std;
 
