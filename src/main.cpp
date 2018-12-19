@@ -4,7 +4,6 @@
 */
 
 #include <iostream>
-
 #include "lib/tc.cpp"
 
 using namespace std;
