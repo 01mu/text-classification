@@ -5,30 +5,21 @@
 
 #include "tc.h"
 
-double posProb = 0;
-double negProb = 0;
+double pos_prob = 0;
+double neg_prob = 0;
 double total = 0;
-double posWordTotal = 0;
-double negWordTotal = 0;
-double testPos = 0;
-double testNeg = 0;
-double testTotal = 0;
+double pos_word_total = 0;
+double neg_word_total = 0;
+double test_pos = 0;
+double test_neg = 0;
+double test_total = 0;
 
 vector<string> words;
-vector<review> reviews;
-vector<wordProb> wordProbVec;
+map<string, string> words_map;
+vector<Review> reviews;
+vector<WordProb> word_probs;
 vector<string> rev_txt;
 vector<int> quality;
-
-bool compareByLengthPos(const wordProb & a, const wordProb & b)
-{
-    return a.probPos < b.probPos;
-}
-
-bool compareByLengthNeg(const wordProb & a, const wordProb & b)
-{
-    return a.probNeg < b.probNeg;
-}
 
 vector<string> tokenize(const char * str, char c = ' ')
 {
@@ -50,17 +41,19 @@ vector<string> tokenize(const char * str, char c = ' ')
     return result;
 }
 
-void getTextFromFile()
+void get_text_from_file()
 {
     cout << endl << "Getting input from 'hamspam'";
 
     string buffer;
     ifstream file("input/hamspam");
 
-    while (file && getline(file, buffer))
+    while(file && getline(file, buffer))
     {
         if (buffer.length() == 0)
+        {
             continue;
+        }
 
         if(buffer.substr(0, 1) == "s")
         {
@@ -75,231 +68,242 @@ void getTextFromFile()
     }
 }
 
-void getTokenizedTerms()
+void get_tokenized_words()
 {
+    vector<string> split_word;
+    string word;
+
     cout << endl << "Getting individual words from 'hamspam'";
 
-    for(int i = 0; i < (int) rev_txt.size(); i++)
+    for(int i = 0; i < rev_txt.size(); i++)
     {
-        vector<string> splitWord = tokenize(rev_txt.at(i).c_str());
+        split_word = tokenize(rev_txt.at(i).c_str());
 
-        for(int j = 0; j < (int) splitWord.size(); j++)
+        for(int j = 0; j < split_word.size(); j++)
         {
-            if(std::find(words.begin(), words.end(), splitWord.at(j))
-                == words.end())
+            word = split_word.at(j);
+            pair<string, string> pr(word, word);
+
+            if(get<1>(words_map.insert(pr)) != false)
             {
-                words.push_back(splitWord.at(j));
+                words.push_back(word);
             }
         }
     }
 }
 
-void tokenizeText()
+void tokenize_text()
 {
+    int cnt;
+
+    vector<string> split_word;
+    string word;
+
     cout << endl << "Tokenizing and assigning text and " <<
         "classification inputs to training set vector";
 
-    for(int i = 0; i < (int) rev_txt.size(); i++)
+    for(int i = 0; i < rev_txt.size(); i++)
     {
-        vector<string> splitWord = tokenize(rev_txt.at(i).c_str());
-        vector<string> checkedWords;
-        vector<attributes> tempOccurance;
-        attributes tempAttribute;
+        Attribute attribute;
+        Review review;
 
-        for(int j = 0; j < (int) splitWord.size(); j++)
+        vector<Attribute> word_occurances;
+
+        split_word = tokenize(rev_txt.at(i).c_str());
+        map<string, string> checked;
+
+        for(int j = 0; j < split_word.size(); j++)
         {
-            if(std::find(words.begin(), words.end(), splitWord.at(j))
-                != words.end() && std::find(checkedWords.begin(),
-                checkedWords.end(), splitWord.at(j)) == checkedWords.end())
+            word = split_word.at(j);
+            pair<string, string> pr(word, word);
+
+            if(get<1>(checked.insert(pr)) != false)
             {
-                int count = std::count(splitWord.begin(),
-                    splitWord.end(), splitWord.at(j));
+                cnt = count(split_word.begin(), split_word.end(), word);
 
-                tempAttribute.word = splitWord.at(j);
-                tempAttribute.frequency = count;
-                tempOccurance.push_back(tempAttribute);
+                attribute.word = word;
+                attribute.frequency = cnt;
 
-                checkedWords.push_back(splitWord.at(j));
+                word_occurances.push_back(attribute);
             }
         }
 
-        review temp;
-        temp.text = rev_txt.at(i);
-        temp.wordOccurances = tempOccurance;
-        temp.qualityClass = quality.at(i);
+        review.text = rev_txt.at(i);
+        review.word_occurances = word_occurances;
+        review.quality_class = quality.at(i);
 
-        if(temp.qualityClass == 0)
+        for(int l = 0; l < review.word_occurances.size(); l++)
         {
-            negProb++;
+            if(review.quality_class == 0)
+            {
+                neg_word_total += review.word_occurances.at(l).frequency;
+            }
+            else
+            {
+                pos_word_total += review.word_occurances.at(l).frequency;
+            }
+        }
+
+        if(review.quality_class == 0)
+        {
+            neg_prob++;
         }
         else
         {
-            posProb++;
+            pos_prob++;
         }
 
         total++;
 
-        reviews.push_back(temp);
+        reviews.push_back(review);
     }
 
-    negProb = negProb / total;
-    posProb = posProb / total;
+    neg_prob = neg_prob / total;
+    pos_prob = pos_prob / total;
 }
 
-void determineWordProbs()
+void determine_word_probs()
 {
+    double pos_word_freq = 0;
+    double neg_word_freq = 0;
+
     cout << endl << "Determining probabilities for each word in training set";
 
-    for(int k = 0; k < (int) reviews.size(); k++)
+    for(int i = 0; i < words.size(); i++)
     {
-        if(reviews.at(k).qualityClass == 1)
+        WordProb wp;
+
+        pos_word_freq = 0;
+        neg_word_freq = 0;
+
+        for(int l = 0; l < reviews.size(); l++)
         {
-            for(int l = 0; l < (int) reviews.at(k).wordOccurances.size(); l++)
+            for(int k = 0; k < reviews.at(l).word_occurances.size(); k++)
             {
-                posWordTotal = reviews.at(k).wordOccurances.at(l).frequency
-                    + posWordTotal;
-            }
-        }
-        else
-        {
-            for(int l = 0; l < (int) reviews.at(k).wordOccurances.size(); l++)
-            {
-                negWordTotal = reviews.at(k).wordOccurances.at(l).frequency
-                    + negWordTotal;
-            }
-        }
-    }
-
-    for(int i = 0; i < (int) words.size(); i++)
-    {
-        double posWordFrequency = 0;
-        double negWordFrequency = 0;
-
-        wordProb temp;
-        temp.word = words.at(i);
-
-        for(int l = 0; l < (int) reviews.size(); l++)
-        {
-            int woSize = reviews.at(l).wordOccurances.size();
-
-            if(reviews.at(l).qualityClass == 1)
-            {
-                for(int k = 0; k < woSize; k++)
+                if(reviews.at(l).word_occurances.at(k).word == words.at(i))
                 {
-                    if(reviews.at(l).wordOccurances.at(k).word == words.at(i))
+                    if(reviews.at(l).quality_class == 1)
                     {
-                        posWordFrequency = reviews.at(l)
-                            .wordOccurances.at(k).frequency + posWordFrequency;
-
-                        break;
+                        pos_word_freq += reviews.at(l)
+                            .word_occurances.at(k).frequency;
                     }
-                }
-            }
-            else
-            {
-                for(int k = 0; k < woSize; k++)
-                {
-                    if(reviews.at(l).wordOccurances.at(k).word == words.at(i))
+                    else
                     {
-                        negWordFrequency = reviews.at(l)
-                            .wordOccurances.at(k).frequency + negWordFrequency;
-
-                        break;
+                        neg_word_freq += reviews.at(l)
+                            .word_occurances.at(k).frequency;
                     }
                 }
             }
         }
 
-        temp.probPos = (posWordFrequency + 1) / (posWordTotal + words.size());
-        temp.probNeg = (negWordFrequency + 1) / (negWordTotal + words.size());
-        temp.count = 0;
-        wordProbVec.push_back(temp);
+        wp.word = words.at(i);
+        wp.prob_pos = (pos_word_freq + 1) / (pos_word_total + words.size());
+        wp.prob_neg = (neg_word_freq + 1) / (neg_word_total + words.size());
+        wp.count = 0;
+
+        word_probs.push_back(wp);
     }
 
-    outputTrainingSetFiles(wordProbVec);
+    output_training_set(word_probs);
 }
 
-void determineNewInputClass()
+void determine_input_class()
 {
     cout << endl << "Determining whether each input in 'spam' is spam or ham";
 
     string buffer;
     ifstream file("input/spam");
-    vector<string> checkedWords;
-    vector<wordProb> checkedProbs;
+
+    map<string, string> checked_words;
+    vector<WordProb> checked_probs;
+
+    double new_token_pos;
+    double new_token_neg;
+
+    string word;
 
     while(file && getline(file, buffer))
     {
-        if (buffer.length() == 0)
+        if(buffer.length() == 0)
         {
             continue;
         }
 
-        vector<string> newToken = tokenize(buffer.c_str());
+        vector<string> new_token = tokenize(buffer.c_str());
 
-        double newTokenPos = posProb;
-        double newTokenNeg = negProb;
+        new_token_pos = pos_prob;
+        new_token_neg = neg_prob;
 
-        for(int i = 0; i < (int) newToken.size(); i++)
+        for(int i = 0; i < new_token.size(); i++)
         {
-            if(std::find(checkedWords.begin(), checkedWords.end(),
-                newToken.at(i)) == checkedWords.end())
+            word = new_token.at(i);
+
+            pair<string, string> pr(word, word);
+
+            if(get<1>(checked_words.insert(pr)) != false)
             {
-                wordProb temp;
+                WordProb temp;
 
-                temp.word = newToken.at(i);
+                temp.word = new_token.at(i);
 
-                for(int j = 0; j < (int) wordProbVec.size(); j++)
+                for(int j = 0; j < word_probs.size(); j++)
                 {
-                    if(newToken.at(i) == wordProbVec.at(j).word)
+                    if(new_token.at(i) == word_probs.at(j).word)
                     {
-                        temp.probPos = wordProbVec.at(j).probPos;
-                        temp.probNeg = wordProbVec.at(j).probNeg;
-                        break;
+                        temp.prob_pos = word_probs.at(j).prob_pos;
+                        temp.prob_neg = word_probs.at(j).prob_neg;
                     }
                 }
 
-                checkedWords.push_back(newToken.at(i));
-                checkedProbs.push_back(temp);
+                checked_probs.push_back(temp);
             }
 
-            for(int j = 0; j < (int) wordProbVec.size(); j++)
+            for(int j = 0; j < word_probs.size(); j++)
             {
-                if(newToken.at(i) == wordProbVec.at(j).word)
+                if(new_token.at(i) == word_probs.at(j).word)
                 {
-                    newTokenPos = wordProbVec.at(j).probPos * newTokenPos;
-                    newTokenNeg = wordProbVec.at(j).probNeg * newTokenNeg;
-                    break;
+                    new_token_pos *= word_probs.at(j).prob_pos;
+                    new_token_neg *= word_probs.at(j).prob_neg;
                 }
             }
         }
 
-        if(newTokenPos < newTokenNeg)
+        if(new_token_pos < new_token_neg)
         {
-            testNeg++;
+            test_neg++;
         }
         else
         {
-            testPos++;
+            test_pos++;
         }
 
-        testTotal++;
+        test_total++;
     }
 
-    testNeg = testNeg / testTotal * 100;
-    testPos = testPos / testTotal * 100;
+    test_neg = test_neg / test_total * 100;
+    test_pos = test_pos / test_total * 100;
 
-    outputTestSetFiles(checkedProbs);
+    output_test_set(checked_probs);
 
     cout << endl << endl << "Test set (spam): "
-        << endl << "Spam %: " << testPos << endl << "Ham %: " << testNeg
-        << endl << "Total: " << testTotal << endl;
+        << endl << "Spam %: " << test_pos << endl << "Ham %: " << test_neg
+        << endl << "Total: " << test_total << endl;
 
     cout << endl << "Number of unique words in test set: "
-        << checkedProbs.size();
+        << checked_probs.size();
 }
 
-void outputTestSetFiles(vector<wordProb> & checkedProbs)
+bool comp_len_pos(const WordProb & a, const WordProb & b)
+{
+    return a.prob_pos < b.prob_pos;
+}
+
+bool comp_len_neg(const WordProb & a, const WordProb & b)
+{
+    return a.prob_neg < b.prob_neg;
+}
+
+void output_test_set(vector<WordProb> & checkedProbs)
 {
     int checkedProbsSize = checkedProbs.size();
 
@@ -307,9 +311,9 @@ void outputTestSetFiles(vector<wordProb> & checkedProbs)
     topSpamTestHS(checkedProbsSize, checkedProbs);
 }
 
-void topHamTestHS(int checkedProbsSize, vector<wordProb> & checkedProbs)
+void topHamTestHS(int checkedProbsSize, vector<WordProb> & checkedProbs)
 {
-    std::sort(checkedProbs.begin(), checkedProbs.end(), compareByLengthNeg);
+    std::sort(checkedProbs.begin(), checkedProbs.end(), comp_len_neg);
 
     ofstream topHamHS;
     topHamHS.open("output/topHamTestHS");
@@ -317,17 +321,17 @@ void topHamTestHS(int checkedProbsSize, vector<wordProb> & checkedProbs)
     for(int i = checkedProbsSize - 1; i > checkedProbsSize - 250; i--)
     {
         topHamHS << checkedProbs.at(i).word << " "
-            << checkedProbs.at(i).probNeg << " "
-            << checkedProbs.at(i).probPos << endl;
+            << checkedProbs.at(i).prob_neg << " "
+            << checkedProbs.at(i).prob_pos << endl;
     }
 
     topHamHS.close();
 }
 
-void topSpamTestHS(int checkedProbsSize, vector<wordProb> & checkedProbs)
+void topSpamTestHS(int checkedProbsSize, vector<WordProb> & checkedProbs)
 {
 
-    std::sort(checkedProbs.begin(), checkedProbs.end(), compareByLengthPos);
+    std::sort(checkedProbs.begin(), checkedProbs.end(), comp_len_pos);
 
     ofstream topSpamHS;
     topSpamHS.open("output/topSpamTestHS");
@@ -335,22 +339,22 @@ void topSpamTestHS(int checkedProbsSize, vector<wordProb> & checkedProbs)
     for(int i = checkedProbsSize - 1; i > checkedProbsSize - 250; i--)
     {
         topSpamHS << checkedProbs.at(i).word << " "
-            << checkedProbs.at(i).probNeg << " "
-            << checkedProbs.at(i).probPos << endl;
+            << checkedProbs.at(i).prob_neg << " "
+            << checkedProbs.at(i).prob_pos << endl;
     }
 
     topSpamHS.close();
 }
 
-void outputTrainingSetFiles(vector<wordProb> & wordProbVect)
+void output_training_set(vector<WordProb> & word_probst)
 {
     vector<string> top500Pos, top500Neg;
 
-    ProbDiffPos(wordProbVect);
-    ProbDiffNeg(wordProbVect);
+    ProbDiffPos(word_probst);
+    ProbDiffNeg(word_probst);
 
-    TopPos(top500Neg, top500Pos, wordProbVect);
-    TopNeg(top500Neg, top500Pos, wordProbVect);
+    TopPos(top500Neg, top500Pos, word_probst);
+    TopNeg(top500Neg, top500Pos, word_probst);
 
     sort(top500Pos.begin(), top500Pos.begin() + top500Pos.size());
     sort(top500Neg.begin(), top500Neg.begin() + top500Neg.size());
@@ -360,25 +364,25 @@ void outputTrainingSetFiles(vector<wordProb> & wordProbVect)
     InNegAndPos(top500Neg, top500Pos);
 }
 
-void ProbDiffPos(vector<wordProb> & wordProbVect)
+void ProbDiffPos(vector<WordProb> & word_probst)
 {
-    vector<wordProb> diffsPos;
-    wordProb temp;
+    vector<WordProb> diffsPos;
+    WordProb temp;
 
-    int wordProbVecSize = wordProbVect.size();
+    int word_probsSize = word_probst.size();
 
-    for(int i = 0; i < (int) wordProbVect.size(); i++)
+    for(int i = 0; i < (int) word_probst.size(); i++)
     {
-        if(wordProbVect.at(i).probPos > wordProbVect.at(i).probNeg)
+        if(word_probst.at(i).prob_pos > word_probst.at(i).prob_neg)
         {
-            temp.word = wordProbVect.at(i).word;
-            temp.probPos = wordProbVect.at(i).probPos
-                - wordProbVect.at(i).probNeg;
+            temp.word = word_probst.at(i).word;
+            temp.prob_pos = word_probst.at(i).prob_pos
+                - word_probst.at(i).prob_neg;
             diffsPos.push_back(temp);
         }
     }
 
-    std::sort(diffsPos.begin(), diffsPos.end(), compareByLengthPos);
+    std::sort(diffsPos.begin(), diffsPos.end(), comp_len_pos);
 
     ofstream diffsPosTxt;
     diffsPosTxt.open("output/ProbDiffPos");
@@ -386,29 +390,29 @@ void ProbDiffPos(vector<wordProb> & wordProbVect)
     for(int i = 0; i < (int) diffsPos.size(); i++)
     {
         diffsPosTxt << diffsPos.at(i).word << " "
-            << diffsPos.at(i).probPos << endl;
+            << diffsPos.at(i).prob_pos << endl;
     }
 
     diffsPosTxt.close();
 }
 
-void ProbDiffNeg(vector<wordProb> & wordProbVect)
+void ProbDiffNeg(vector<WordProb> & word_probst)
 {
-    vector<wordProb> diffsNeg;
-    wordProb temp;
+    vector<WordProb> diffsNeg;
+    WordProb temp;
 
-    for(int i = 0; i < (int) wordProbVect.size(); i++)
+    for(int i = 0; i < (int) word_probst.size(); i++)
     {
-        if(wordProbVect.at(i).probNeg > wordProbVect.at(i).probPos)
+        if(word_probst.at(i).prob_neg > word_probst.at(i).prob_pos)
         {
-            temp.word = wordProbVect.at(i).word;
-            temp.probNeg = wordProbVect.at(i).probNeg
-                - wordProbVect.at(i).probPos;
+            temp.word = word_probst.at(i).word;
+            temp.prob_neg = word_probst.at(i).prob_neg
+                - word_probst.at(i).prob_pos;
             diffsNeg.push_back(temp);
         }
     }
 
-    std::sort(diffsNeg.begin(), diffsNeg.end(), compareByLengthNeg);
+    std::sort(diffsNeg.begin(), diffsNeg.end(), comp_len_neg);
 
     ofstream diffsNegTxt;
     diffsNegTxt.open("output/ProbDiffNeg");
@@ -416,70 +420,70 @@ void ProbDiffNeg(vector<wordProb> & wordProbVect)
     for(int i = 0; i < (int) diffsNeg.size(); i++)
     {
         diffsNegTxt << diffsNeg.at(i).word << " "
-            << diffsNeg.at(i).probNeg << endl;
+            << diffsNeg.at(i).prob_neg << endl;
     }
 
     diffsNegTxt.close();
 }
 
 void TopPos(vector<string> & top500Pos, vector<string> & top500Neg,
-    vector<wordProb> & wordProbVect)
+    vector<WordProb> & word_probst)
 {
-    int wordProbVecSize = wordProbVect.size();
+    int word_probsSize = word_probst.size();
 
-    std::sort(wordProbVect.begin(), wordProbVect.end(), compareByLengthPos);
+    std::sort(word_probst.begin(), word_probst.end(), comp_len_pos);
 
     ofstream TopPos;
     TopPos.open("output/TopPos");
 
-    for(int i = wordProbVecSize - 1; i > wordProbVecSize - 500; i--)
+    for(int i = word_probsSize - 1; i > word_probsSize - 500; i--)
     {
-        TopPos << wordProbVect.at(i).word <<
-        " P(" << wordProbVect.at(i).word << " | S) = "
-            << wordProbVect.at(i).probPos << " " <<
-        " P(" << wordProbVect.at(i).word << " | H) = "
-            << wordProbVect.at(i).probNeg << endl;
+        TopPos << word_probst.at(i).word <<
+        " P(" << word_probst.at(i).word << " | S) = "
+            << word_probst.at(i).prob_pos << " " <<
+        " P(" << word_probst.at(i).word << " | H) = "
+            << word_probst.at(i).prob_neg << endl;
     }
 
     TopPos.close();
 
-    for(int i = wordProbVecSize - 1; i > wordProbVecSize - 500; i--)
+    for(int i = word_probsSize - 1; i > word_probsSize - 500; i--)
     {
         if(std::find(top500Pos.begin(), top500Pos.end(),
-            wordProbVect.at(i).word) == top500Pos.end())
+            word_probst.at(i).word) == top500Pos.end())
         {
-            top500Pos.push_back(wordProbVect.at(i).word);
+            top500Pos.push_back(word_probst.at(i).word);
         }
     }
 }
 
 void TopNeg(vector<string> & top500Pos, vector<string> & top500Neg,
-    vector<wordProb> & wordProbVect)
+    vector<WordProb> & word_probst)
 {
-    int wordProbVecSize = wordProbVect.size();
+    int word_probsSize = word_probst.size();
 
-    std::sort(wordProbVect.begin(), wordProbVect.end(), compareByLengthNeg);
+    std::sort(word_probst.begin(), word_probst.end(), comp_len_neg);
 
     ofstream TopNeg;
     TopNeg.open("output/TopNeg");
 
-    for(int i = wordProbVecSize - 1; i > wordProbVecSize - 500; i--)
+    for(int i = word_probsSize - 1; i > word_probsSize - 500; i--)
     {
-        TopNeg << wordProbVect.at(i).word <<
-        " P(" << wordProbVect.at(i).word << " | H) = "
-            << wordProbVect.at(i).probNeg << " " <<
-        " P(" << wordProbVect.at(i).word << " | S) = "
-            << wordProbVect.at(i).probPos << endl;
+        TopNeg << word_probst.at(i).word <<
+        " P(" << word_probst.at(i).word << " | H) = "
+            << word_probst.at(i).prob_neg << " " <<
+        " P(" << word_probst.at(i).word << " | S) = "
+            << word_probst.at(i).prob_pos << endl;
     }
 
     TopNeg.close();
 
-    for(int i = wordProbVecSize - 1; i > wordProbVecSize - 500; i--)
+    for(int i = word_probsSize - 1; i > word_probsSize - 500; i--)
     {
         if(std::find(top500Neg.begin(), top500Neg.end(),
-            wordProbVect.at(i).word) == top500Neg.end())
+            word_probst.at(i).word) == top500Neg.end())
         {
-            top500Neg.push_back(wordProbVect.at(i).word);
+            top500Neg.push_back(word_probst.at(i).word);
         }
     }
 }
@@ -537,3 +541,4 @@ void InNegAndPos(vector<string> & top500Neg, vector<string> & top500Pos)
 
     InNegAndPos.close();
 }
+

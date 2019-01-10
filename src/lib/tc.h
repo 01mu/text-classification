@@ -12,95 +12,69 @@
 #include <algorithm>
 #include <fstream>
 #include <time.h>
+#include <map>
 
 using namespace std;
 
-struct attributes
+struct Attribute
 {
     string word;
     double frequency;
 };
 
-struct review
+struct Review
 {
     string text;
-    vector<attributes> wordOccurances;
-    int qualityClass;
+    vector<Attribute> word_occurances;
+    int quality_class;
 };
 
-struct wordProb
+struct WordProb
 {
     string word;
-    double probPos;
-    double probNeg;
+    double prob_pos;
+    double prob_neg;
     int count;
 };
 
-bool compareByLengthPos(const wordProb &, const wordProb &);
-bool compareByLengthNeg(const wordProb &, const wordProb &);
+bool comp_len_pos(const WordProb &, const WordProb &);
+bool comp_len_neg(const WordProb &, const WordProb &);
 vector<string> tokenize(const char *, char);
 
-// assign sms texts and spam/ham quality from file to vector
-void getTextFromFile();
-// tokenize the review vector and gather individual words from learning set
-void getTokenizedTerms();
-// assign text and quality to reviews vector
-void tokenizeText();
-// assign spam/ham probabilities to each word in words vector
-void determineWordProbs();
-// determine whether new set inputs are ham/spam based on old probabilities
-void determineNewInputClass();
+void get_text_from_file();
+void get_tokenized_words();
+void tokenize_text();
+void determine_word_probs();
+void determine_input_class();
 
-void outputTestSetFiles(vector<wordProb> &);
-void outputTrainingSetFiles(vector<wordProb> &);
+void output_test_set(vector<WordProb> &);
+void output_training_set(vector<WordProb> &);
 
-void topHamTestHS(int, vector<wordProb> &);
-void topSpamTestHS(int, vector<wordProb> &);
-void ProbDiffPos(vector<wordProb> &);
-void ProbDiffNeg(vector<wordProb> &);
-void TopPos(vector<string> &, vector<string> &, vector<wordProb> &);
-void TopNeg(vector<string> &, vector<string> &, vector<wordProb> &);
+void topHamTestHS(int, vector<WordProb> &);
+void topSpamTestHS(int, vector<WordProb> &);
+void ProbDiffPos(vector<WordProb> &);
+void ProbDiffNeg(vector<WordProb> &);
+void TopPos(vector<string> &, vector<string> &, vector<WordProb> &);
+void TopNeg(vector<string> &, vector<string> &, vector<WordProb> &);
 void InPosNotNeg(vector<string> &, vector<string> &);
 void InNegNotPos(vector<string> &, vector<string> &);
 void InNegAndPos(vector<string> &, vector<string> &);
 
-// probability of positive reviews in training set (spam)
-extern double posProb;
-
-// probability of negative reviews in training set (ham)
-extern double negProb;
-
-// total number of reviews in training set
+extern double pos_prob;
+extern double neg_prob;
 extern double total;
+extern double pos_word_total;
+extern double neg_word_total;
 
-// number of words that occur in positive reviews in training set (spam)
-extern double posWordTotal;
+extern double test_pos;
+extern double test_neg;
+extern double test_total;
 
-// number of words that occur in negative reviews in training set (ham)
-extern double negWordTotal;
-
-// probability of positive reviews in test set (spam)
-extern double testPos;
-
-// probability of negative reviews in test set (ham)
-extern double testNeg;
-
-// total number of reviews in test set
-extern double testTotal;
-
-// vector containing every word
-extern vector<string> words;
-
-// vector of reviews
-extern vector<review> reviews;
-
-// words that occur in positive reviews (spam) and negative reviews (ham)
-extern vector<wordProb> wordProbVec;
-
-// review text
 extern vector<string> rev_txt;
-
-// quality for input lines (0 = ham 1 = spam)
+extern vector<string> words;
+extern map<string, string> words_map;
+extern vector<Review> reviews;
+extern vector<WordProb> word_probs;
 extern vector<int> quality;
 
 #endif
